@@ -34,3 +34,37 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Spec Kit commands
+
+The following commands were used with Spec Kit during the development of this project:
+
+### Establish project principles
+
+```
+/speckit.constitution Voy a crear una web estática con Next.js. Sigue los Next.js coding guidelines. Usare Shadcn y Tailwind CSS. Solo usare Playwright para testing; y se crearan los tests después de la implementación. Por el momento no usaremos CI.
+```
+
+### Create the spec
+
+```
+/speckit.specify Quiero construir una aplicación de TODO list, algo sencillo, y que este centrado en la pagina.
+```
+
+### Create a technical implementation plan
+
+```
+/speckit.plan Usaremos localStorage; no necesitamos implementar ningún backend.
+```
+
+### Break down into tasks
+
+```
+/speckit.tasks
+```
+
+### Execute implementation
+
+```
+/speckit.implement
+```
