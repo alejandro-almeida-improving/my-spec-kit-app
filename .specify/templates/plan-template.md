@@ -28,10 +28,18 @@
 **Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
 
 ## Constitution Check
-
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+The plan MUST include an explicit Constitution Check that documents how the plan satisfies the project
+constitution (`.specify/memory/constitution.md`). For this repository the minimum gates are:
+
+- Framework alignment: confirm the plan targets a static Next.js implementation (SSG / ISR patterns where
+  applicable).
+- UI alignment: confirm use of `shadcn` components and Tailwind CSS or justify deviation.
+- Testing: confirm Playwright tests will cover P1 user journeys and indicate where tests will live under `tests/`.
+- CI: note that no CI is required by default; indicate any plans to introduce CI and the migration steps.
+
+The plan SHOULD include exact file paths and commands that a reviewer can run locally to validate the gates.
 
 ## Project Structure
 

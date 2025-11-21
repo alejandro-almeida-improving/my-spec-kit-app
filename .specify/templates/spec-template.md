@@ -5,6 +5,8 @@
 **Status**: Draft  
 **Input**: User description: "$ARGUMENTS"
 
+**Testing Framework**: Playwright (E2E / integration)
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--
@@ -89,6 +91,8 @@
 - **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
 - **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
 - **FR-005**: System MUST [behavior, e.g., "log all security events"]
+
+**Testing**: Automated end-to-end and integration tests MUST use Playwright (see `playwright.config.ts`).
 
 *Example of marking unclear requirements:*
 

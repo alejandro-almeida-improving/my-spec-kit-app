@@ -8,7 +8,9 @@ description: "Task list template for feature implementation"
 **Input**: Design documents from `/specs/[###-feature-name]/`
 **Prerequisites**: plan.md (required), spec.md (required for user stories), research.md, data-model.md, contracts/
 
-**Tests**: The examples below include test tasks. Tests are OPTIONAL - only include them if explicitly requested in the feature specification.
+**Tests**: The project requires Playwright for automated end-to-end and integration tests. Playwright tests are
+mandatory for P1 user journeys and MUST be added prior to a public release or tag. Include test file paths exactly
+and provide commands to run them locally (e.g., `npx playwright test`).
 
 **Organization**: Tasks are grouped by user story to enable independent implementation and testing of each story.
 
@@ -85,6 +87,8 @@ Examples of foundational tasks (adjust based on your project):
 
 - [ ] T010 [P] [US1] Contract test for [endpoint] in tests/contract/test_[name].py
 - [ ] T011 [P] [US1] Integration test for [user journey] in tests/integration/test_[name].py
+- [ ] T010 [P] [US1] Playwright E2E test for [user journey] in `tests/e2e/[name].spec.ts`
+- [ ] T011 [P] [US1] Playwright integration test for [flow] in `tests/integration/[name].spec.ts`
 
 ### Implementation for User Story 1
 
