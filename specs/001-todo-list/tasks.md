@@ -10,11 +10,11 @@ description: "Generated tasks for TODO List feature"
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-- [ ] T001 [P] Create feature component directory at `app/components/todo/`
-- [ ] T002 [P] Create component scaffold `app/components/todo/TodoForm.tsx`
-- [ ] T003 [P] Create component scaffold `app/components/todo/TodoItem.tsx`
-- [ ] T004 [P] Create component scaffold `app/components/todo/TodoList.tsx`
-- [ ] T005 [P] Create Playwright test scaffold `tests/todo.spec.ts`
+ - [x] T001 [P] Create feature component directory at `app/components/todo/`
+ - [x] T002 [P] Create component scaffold `app/components/todo/TodoForm.tsx`
+ - [x] T003 [P] Create component scaffold `app/components/todo/TodoItem.tsx`
+ - [x] T004 [P] Create component scaffold `app/components/todo/TodoList.tsx`
+ - [x] T005 [P] Create Playwright test scaffold `tests/todo.spec.ts`
 
 ---
 
@@ -22,9 +22,9 @@ description: "Generated tasks for TODO List feature"
 
 **Purpose**: Core types and utility modules that all stories depend on. These MUST be completed before story work.
 
-- [ ] T006 [P] Create Task type definition in `app/components/todo/types.ts`
-- [ ] T007 [P] Create localStorage helper stub in `app/lib/todoStorage.ts` (read/write API for key `todo:tasks`)
-- [ ] T008 [P] Add UUID helper in `app/lib/uuid.ts` (used for client-generated `id` values)
+ - [x] T006 [P] Create Task type definition in `app/components/todo/types.ts`
+ - [x] T007 [P] Create localStorage helper stub in `app/lib/todoStorage.ts` (read/write API for key `todo:tasks`)
+ - [x] T008 [P] Add UUID helper in `app/lib/uuid.ts` (used for client-generated `id` values)
 
 ---
 
@@ -38,12 +38,12 @@ and asserts the final list state (no persistence required for US1 test).
 
 ### Implementation Tasks
 
-- [ ] T009 [US1] Implement add-task logic in `app/components/todo/TodoForm.tsx` (in-memory state; validate non-empty title)
-- [ ] T010 [US1] Implement task item UI and handlers in `app/components/todo/TodoItem.tsx` (toggle complete, delete)
-- [ ] T011 [US1] Implement list container and in-memory state management in `app/components/todo/TodoList.tsx`
-- [ ] T012 [US1] Integrate `TodoList` into main page at `app/page.tsx`
-- [ ] T013 [US1] Add Playwright E2E test for US1 at `tests/todo_add_complete_delete.spec.ts` (covers add, complete, delete flows)
-- [ ] T014 [US1] Add UI validation message for empty task input in `app/components/todo/TodoForm.tsx` (satisfies FR-004)
+ - [x] T009 [US1] Implement add-task logic in `app/components/todo/TodoForm.tsx` (in-memory state; validate non-empty title)
+ - [x] T010 [US1] Implement task item UI and handlers in `app/components/todo/TodoItem.tsx` (toggle complete, delete)
+ - [x] T011 [US1] Implement list container and in-memory state management in `app/components/todo/TodoList.tsx`
+ - [x] T012 [US1] Integrate `TodoList` into main page at `app/page.tsx`
+ - [x] T013 [US1] Add Playwright E2E test for US1 at `tests/todo_add_complete_delete.spec.ts` (covers add, complete, delete flows)
+ - [x] T014 [US1] Add UI validation message for empty task input in `app/components/todo/TodoForm.tsx` (satisfies FR-004)
 
 ---
 
@@ -71,10 +71,10 @@ add a test that performs drag-and-drop and verifies order change.
 
 ### Implementation Tasks
 
-- [ ] T019 [US3] Implement `readTasks()` and `writeTasks()` in `app/lib/todoStorage.ts` to read/write `todo:tasks` from `localStorage`
-- [ ] T020 [US3] Wire persistence to `app/components/todo/TodoList.tsx` so initial load reads from storage and all mutations persist
-- [ ] T021 [US3] Add Playwright persistence test at `tests/todo_persistence.spec.ts` (add tasks, reload, assert)
-- [ ] T022 [US3] Implement migration/normalization on load to apply default fields for legacy data in `app/lib/todoStorage.ts`
+ - [x] T019 [US3] Implement `readTasks()` and `writeTasks()` in `app/lib/todoStorage.ts` to read/write `todo:tasks` from `localStorage`
+ - [x] T020 [US3] Wire persistence to `app/components/todo/TodoList.tsx` so initial load reads from storage and all mutations persist
+ - [ ] T021 [US3] Add Playwright persistence test at `tests/todo_persistence.spec.ts` (add tasks, reload, assert)
+ - [x] T022 [US3] Implement migration/normalization on load to apply default fields for legacy data in `app/lib/todoStorage.ts`
 
 ---
 
