@@ -11,8 +11,8 @@ description: "Task list for the Netflix-style Movie Catalog Page feature"
 
 **Purpose**: Lock dependencies, provisioning, and verification guidance before the UI work begins.
 
-- [ ] T001 Review and adjust dependencies in `package.json` so the bundle includes Next.js 16, React 19, Tailwind CSS 4, Swiper 12, `lucide-react`, and the Shadcn primitives required by the plan while keeping the static `package-lock.json` in sync.
-- [ ] T003 [P] Update `specs/001-netflix-catalog/quickstart.md` to include the documented Playwright commands (`npx playwright test --config=playwright.config.ts --grep "hero|carousel|search"`) and explain the manual verification steps required before shipping.
+- [x] T001 Review and adjust dependencies in `package.json` so the bundle includes Next.js 16, React 19, Tailwind CSS 4, Swiper 12, `lucide-react`, and the Shadcn primitives required by the plan while keeping the static `package-lock.json` in sync.
+- [x] T003 [P] Update `specs/001-netflix-catalog/quickstart.md` to include the documented Playwright commands (`npx playwright test --config=playwright.config.ts --grep "hero|carousel|search"`) and explain the manual verification steps required before shipping.
 
 ---
 
@@ -20,12 +20,12 @@ description: "Task list for the Netflix-style Movie Catalog Page feature"
 
 **Purpose**: Establish the shared layout, global styles, and data helpers that every user story depends on.
 
-- [ ] T004 Replace `app/layout.tsx` with a Netflix-inspired root layout that sets the dark metadata, imports the Geist fonts, and applies the dark `body` classes used across the new components.
-- [ ] T005 Refresh `app/globals.css` so the global styles expose the dark theme tokens, reduced-motion rules, focus-visible outlines, and Tailwind layers that the hero, carousels, search, and modal components will rely on.
-- [ ] T006 [P] Create `app/components/header.tsx` containing the fictitious logo, condensed nav links (Home/Movies/Series/My List), and a placeholder slot for the search input that Story 3 will populate.
-- [ ] T007 [P] Create `app/components/footer.tsx` with Help/Terms/Privacy links, social icons, and a faux copyright notice while keeping 4.5:1 contrast.
-- [ ] T008 Implement `lib/movies.ts` with the `Movie` and `Category` types plus helper exports such as `getFeaturedMovies`, `getCategoryRows`, and `mapMoviesById` that read `data/movies.json` and surface the data needed by every interactive component.
-- [ ] T009 [P] Expand and normalize `data/movies.json` so there are dedicated Trending, New, Action, and Comedy categories with at least six movies each, hero `featured` flags (3–5 items), poster paths under `public/images/movies`, and fallback metadata for missing synopsis/tagline values.
+- [x] T004 Replace `app/layout.tsx` with a Netflix-inspired root layout that sets the dark metadata, imports the Geist fonts, and applies the dark `body` classes used across the new components.
+- [x] T005 Refresh `app/globals.css` so the global styles expose the dark theme tokens, reduced-motion rules, focus-visible outlines, and Tailwind layers that the hero, carousels, search, and modal components will rely on.
+- [x] T006 [P] Create `app/components/header.tsx` containing the fictitious logo, condensed nav links (Home/Movies/Series/My List), and a placeholder slot for the search input that Story 3 will populate.
+- [x] T007 [P] Create `app/components/footer.tsx` with Help/Terms/Privacy links, social icons, and a faux copyright notice while keeping 4.5:1 contrast.
+- [x] T008 Implement `lib/movies.ts` with the `Movie` and `Category` types plus helper exports such as `getFeaturedMovies`, `getCategoryRows`, and `mapMoviesById` that read `data/movies.json` and surface the data needed by every interactive component.
+- [x] T009 [P] Expand and normalize `data/movies.json` so there are dedicated Trending, New, Action, and Comedy categories with at least six movies each, hero `featured` flags (3–5 items), poster paths under `public/images/movies`, and fallback metadata for missing synopsis/tagline values.
 
 ---
 
@@ -35,11 +35,11 @@ description: "Task list for the Netflix-style Movie Catalog Page feature"
 **Independent Test**: Use `tests/hero.spec.ts` to tab into the slider, operate the navigation buttons or keyboard arrows, and verify the active indicator follows the current slide before running Playwright locally.
 
 ### Tests for User Story 1
-- [ ] T010 Create `tests/hero.spec.ts` to automate the Playwright hero journey described in the spec, run it with `npx playwright test --config=playwright.config.ts --grep "hero"`, and capture the acceptance criteria around arrows, dots, and focus.
+- [x] T010 Create `tests/hero.spec.ts` to automate the Playwright hero journey described in the spec, run it with `npx playwright test --config=playwright.config.ts --grep "hero"`, and capture the acceptance criteria around arrows, dots, and focus.
 
 ### Implementation for User Story 1
-- [ ] T011 [P] [US1] Build `app/components/hero-carousel.tsx` as a `use client` component that consumes `getFeaturedMovies` from `lib/movies.ts`, renders Swiper slides with poster/title/tagline, exposes arrow/dot controls, pause toggle, `aria-live` slide announcement, and obeys `prefers-reduced-motion` plus keyboard focus outlines.
-- [ ] T012 [US1] Import `Header` and `HeroCarousel` into `app/page.tsx`, wrap them in the new `main` hero container, and ensure the page still renders server-side while wiring focus-visible contours around the hero controls.
+- [x] T011 [P] [US1] Build `app/components/hero-carousel.tsx` as a `use client` component that consumes `getFeaturedMovies` from `lib/movies.ts`, renders Swiper slides with poster/title/tagline, exposes arrow/dot controls, pause toggle, `aria-live` slide announcement, and obeys `prefers-reduced-motion` plus keyboard focus outlines.
+- [x] T012 [US1] Import `Header` and `HeroCarousel` into `app/page.tsx`, wrap them in the new `main` hero container, and ensure the page still renders server-side while wiring focus-visible contours around the hero controls.
 
 ---
 

@@ -18,9 +18,9 @@
    ```bash
    npx playwright test --config=playwright.config.ts --grep "hero|carousel|search"
    ```
-   - Hero spec: tab into slider, use arrow buttons/dots, ensure indicators track the active slide.
-   - Carousel spec: scroll a row via keyboard or wheel, hover cards to reveal "Watch details" and "Add to My List," then activate both via keyboard.
-   - Search spec: type a partial title, hit Enter, confirm only matching cards stay visible, and pressing Enter on "Watch details" opens the placeholder modal with the detail text.
+   - **Hero journey**: Tab into the slider, operate next/previous arrows or dots, and confirm the aria-live indicator matches the active slide while pause and motion preferences are honored.
+   - **Carousel navigation**: Scroll a row via keyboard or wheel, hover cards to expose the overlay actions, then activate "Watch details" and "Add to My List" with both keyboard and pointer inputs.
+   - **Search & placeholder**: Type a partial title, press Enter to confirm the remaining cards stay visible, then trigger "Watch details" to open the placeholder modal and verify the copy and focus return.
 5. **Manual checks**
-   - Confirm focus outlines stay within each component and color contrast is at least 4.5:1.
-   - Verify the placeholder detail panel mentions "Detail under construction."
+   - Confirm focus outlines remain visible inside the hero controls, carousel cards, search bar, and modal regardless of input method, and maintain at least 4.5:1 contrast.
+   - Verify the placeholder detail panel clearly states "Detail under construction" and that closing it returns focus to the originating card.

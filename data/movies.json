@@ -2,135 +2,208 @@
   "movies": [
     {
       "id": 1,
-      "title": "Frankenstein",
+      "title": "Midnight Lanes",
+      "category": "Trending now",
       "image": "/images/movies/movie-1.jpg",
-      "url": "https://www.netflix.com/mx-en/title/81507921"
+      "tagline": "Neon heists under the midnight sky.",
+      "synopsis": "A shadow driver races through city lights to save a crew whose future depends on one last lap.",
+      "featured": true,
+      "url": "https://www.netflix.com/title/midnight-lanes"
     },
     {
       "id": 2,
-      "title": "A Man Called Otto",
+      "title": "Aurora Runs",
+      "category": "Trending now",
       "image": "/images/movies/movie-2.jpg",
-      "url": "https://www.netflix.com/mx-en/title/81616256"
+      "tagline": "When the storm won't hold, the pilots push harder.",
+      "synopsis": "A test pilot with a mechanical heart races across the arctic to prove the impossible is human.",
+      "featured": true,
+      "url": "https://www.netflix.com/title/aurora-runs"
     },
     {
       "id": 3,
-      "title": "KPop Demon Hunters",
+      "title": "Glass Ocean",
+      "category": "Trending now",
       "image": "/images/movies/movie-3.jpg",
-      "url": "https://www.netflix.com/mx-en/title/81498621"
+      "tagline": "Data surges meet human grit.",
+      "synopsis": "A detective slips between mirrored realities to track a signal that could topple a metropolis.",
+      "featured": true,
+      "url": "https://www.netflix.com/title/glass-ocean"
     },
     {
       "id": 4,
-      "title": "Champagne Problems",
+      "title": "Neon Frequency",
+      "category": "Trending now",
       "image": "/images/movies/movie-4.jpg",
-      "url": "https://www.netflix.com/mx-en/title/81628146"
+      "tagline": "Bass drops and heartbeat chases.",
+      "synopsis": "A late-night DJ discovers a hidden conspiracy encoded in the city's signal noise.",
+      "featured": true,
+      "url": "https://www.netflix.com/title/neon-frequency"
     },
     {
       "id": 5,
-      "title": "Fast X",
+      "title": "Last Screen Hero",
+      "category": "Trending now",
       "image": "/images/movies/movie-5.jpg",
-      "url": "https://www.netflix.com/mx-en/title/81649988"
+      "tagline": "The final roll call.",
+      "synopsis": "An aging action star returns for one more mission to protect the city he built.",
+      "featured": true,
+      "url": "https://www.netflix.com/title/last-screen-hero"
     },
     {
       "id": 6,
-      "title": "Rampage",
+      "title": "Dawn Run",
+      "category": "Trending now",
       "image": "/images/movies/movie-6.jpg",
-      "url": "https://www.netflix.com/mx-en/title/80216309"
+      "synopsis": "A courier must deliver a cure before the sun rises, navigating a city that never slows.",
+      "url": "https://www.netflix.com/title/dawn-run"
     },
     {
       "id": 7,
-      "title": "The Secret Life of Pets 2",
+      "title": "Heatwave Diaries",
+      "category": "New releases",
       "image": "/images/movies/movie-7.jpg",
-      "url": "https://www.netflix.com/mx-en/title/81044813"
+      "tagline": "Summer secrets spread like wildfire.",
+      "synopsis": "A group of friends document the city's hottest mystery in the sweltering streets of summer.",
+      "url": "https://www.netflix.com/title/heatwave-diaries"
     },
     {
       "id": 8,
-      "title": "Counterattack",
+      "title": "North Star",
+      "category": "New releases",
       "image": "/images/movies/movie-8.jpg",
-      "url": "https://www.netflix.com/mx-en/title/81936018"
+      "tagline": "Follow the flicker, find yourself.",
+      "synopsis": "A lost hiker follows aurora trails that mirror his childhood memories and a secret society.",
+      "url": "https://www.netflix.com/title/north-star"
     },
     {
       "id": 9,
-      "title": "65",
+      "title": "Crimson Orbit",
+      "category": "Action",
       "image": "/images/movies/movie-9.jpg",
-      "url": "https://www.netflix.com/mx-en/title/81520516"
+      "tagline": "Orbiting danger.",
+      "synopsis": "A rogue shuttle pilot is forced into a heist that could destabilize a planetary coalition.",
+      "url": "https://www.netflix.com/title/crimson-orbit"
     },
     {
       "id": 10,
-      "title": "Godzilla x Kong: The New Empire",
+      "title": "City of Echoes",
+      "category": "Action",
       "image": "/images/movies/movie-10.jpg",
-      "url": "https://www.netflix.com/mx-en/title/81767887"
+      "tagline": "Recall the past to rewrite the future.",
+      "synopsis": "A former operative returns to a city that has erased him, racing against a phantom syndicate.",
+      "url": "https://www.netflix.com/title/city-of-echoes"
     },
     {
       "id": 11,
-      "title": "Shrek Forever After",
+      "title": "Paper Planes",
+      "category": "Comedy nights",
       "image": "/images/movies/movie-11.jpg",
-      "url": "https://www.netflix.com/mx-en/title/70117295"
+      "synopsis": "A shy paper engineer joins a ragtag postal crew to deliver laughter across town.",
+      "url": "https://www.netflix.com/title/paper-planes"
     },
     {
       "id": 12,
-      "title": "Sonic the Hedgehog 3",
+      "title": "Side Street Ballet",
+      "category": "New releases",
       "image": "/images/movies/movie-12.jpg",
-      "url": "https://www.netflix.com/mx-en/title/81902147"
+      "tagline": "Precision in every pirouette.",
+      "synopsis": "Street dancers choreograph an underground ballet that unites the downtown scene.",
+      "url": "https://www.netflix.com/title/side-street-ballet"
     },
     {
       "id": 13,
-      "title": "Heaven Is for Real",
+      "title": "Rogue Protocol",
+      "category": "Action",
       "image": "/images/movies/movie-13.jpg",
-      "url": "https://www.netflix.com/mx-en/title/70295734"
+      "tagline": "Funding the mission with a code you can't read.",
+      "synopsis": "A tech-savvy cell safeguards the last untraceable network while rival forces close in.",
+      "url": "https://www.netflix.com/title/rogue-protocol"
     },
     {
       "id": 14,
-      "title": "Seven Years in Tibet",
+      "title": "Fury Lane",
+      "category": "Action",
       "image": "/images/movies/movie-14.jpg",
-      "url": "https://www.netflix.com/mx-en/title/1179053"
+      "tagline": "Speed over silence.",
+      "synopsis": "An undercover racer swaps bullets for burnout stunts to collapse a criminal delivery ring.",
+      "url": "https://www.netflix.com/title/fury-lane"
     },
     {
       "id": 15,
-      "title": "Lost on a Mountain in Maine",
+      "title": "Blizzard Run",
+      "category": "Action",
       "image": "/images/movies/movie-15.jpg",
-      "url": "https://www.netflix.com/mx-en/title/83074706"
+      "tagline": "Freeze-frame justice.",
+      "synopsis": "A weather-controlling operative is forced to throw the grid into chaos to save her squad.",
+      "url": "https://www.netflix.com/title/blizzard-run"
     },
     {
       "id": 16,
-      "title": "Coach Carter",
+      "title": "Iron Forest",
+      "category": "Action",
       "image": "/images/movies/movie-16.jpg",
-      "url": "https://www.netflix.com/mx-en/title/70019004"
+      "tagline": "Steel leaves fall slow.",
+      "synopsis": "A botanist turned cyborg fights to protect the last green reserve from mercenary loggers.",
+      "url": "https://www.netflix.com/title/iron-forest"
     },
     {
       "id": 17,
-      "title": "Just Mercy",
+      "title": "Stand-Up Now",
+      "category": "Comedy nights",
       "image": "/images/movies/movie-17.jpg",
-      "url": "https://www.netflix.com/mx-en/title/80207506"
+      "tagline": "Laughs in every lane.",
+      "synopsis": "Four comedians turn a midnight garage into the city's most honest stage.",
+      "url": "https://www.netflix.com/title/stand-up-now"
     },
     {
       "id": 18,
-      "title": "Fatherhood",
+      "title": "Retro Replay",
+      "category": "Comedy nights",
       "image": "/images/movies/movie-18.jpg",
-      "url": "https://www.netflix.com/mx-en/title/81435227"
+      "tagline": "Press play on the past.",
+      "synopsis": "An arcade crew reboots classic games to prank the city's most serious mayor.",
+      "url": "https://www.netflix.com/title/retro-replay"
     },
     {
       "id": 19,
-      "title": "Rescued by Ruby",
+      "title": "Mock Trials",
+      "category": "Comedy nights",
       "image": "/images/movies/movie-19.jpg",
-      "url": "https://www.netflix.com/mx-en/title/81107362"
+      "tagline": "Justice served with a side of satire.",
+      "synopsis": "A courtroom parody troupe uncovers a real scandal while ferrying props between gigs.",
+      "url": "https://www.netflix.com/title/mock-trials"
     },
     {
       "id": 20,
-      "title": "The Six Triple Eight",
+      "title": "Late Night Snack",
+      "category": "Comedy nights",
       "image": "/images/movies/movie-20.jpg",
-      "url": "https://www.netflix.com/mx-en/title/81590591"
+      "tagline": "Midnight munchies never disappoint.",
+      "synopsis": "A culinary crew steals the night with a pop-up diner for insomniacs and dreamers.",
+      "url": "https://www.netflix.com/title/late-night-snack"
     }
   ],
   "categories": [
     {
       "id": 1,
-      "name": "Your Next Watch",
-      "movies": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+      "name": "Trending now",
+      "movieIds": [1, 2, 3, 4, 5, 6, 7, 8]
     },
     {
       "id": 2,
-      "name": "Drama Movies Based on Real Life",
-      "movies": [13, 14, 15, 16, 17, 18, 19, 20]
+      "name": "New releases",
+      "movieIds": [7, 8, 9, 10, 11, 12]
+    },
+    {
+      "id": 3,
+      "name": "Action",
+      "movieIds": [5, 9, 10, 13, 14, 15, 16]
+    },
+    {
+      "id": 4,
+      "name": "Comedy nights",
+      "movieIds": [11, 17, 18, 19, 20, 6]
     }
   ]
 }
