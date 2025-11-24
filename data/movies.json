@@ -1,0 +1,136 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Frankenstein",
+      "image": "/images/movies/movie-1.jpg",
+      "url": "https://www.netflix.com/mx-en/title/81507921"
+    },
+    {
+      "id": 2,
+      "title": "A Man Called Otto",
+      "image": "/images/movies/movie-2.jpg",
+      "url": "https://www.netflix.com/mx-en/title/81616256"
+    },
+    {
+      "id": 3,
+      "title": "KPop Demon Hunters",
+      "image": "/images/movies/movie-3.jpg",
+      "url": "https://www.netflix.com/mx-en/title/81498621"
+    },
+    {
+      "id": 4,
+      "title": "Champagne Problems",
+      "image": "/images/movies/movie-4.jpg",
+      "url": "https://www.netflix.com/mx-en/title/81628146"
+    },
+    {
+      "id": 5,
+      "title": "Fast X",
+      "image": "/images/movies/movie-5.jpg",
+      "url": "https://www.netflix.com/mx-en/title/81649988"
+    },
+    {
+      "id": 6,
+      "title": "Rampage",
+      "image": "/images/movies/movie-6.jpg",
+      "url": "https://www.netflix.com/mx-en/title/80216309"
+    },
+    {
+      "id": 7,
+      "title": "The Secret Life of Pets 2",
+      "image": "/images/movies/movie-7.jpg",
+      "url": "https://www.netflix.com/mx-en/title/81044813"
+    },
+    {
+      "id": 8,
+      "title": "Counterattack",
+      "image": "/images/movies/movie-8.jpg",
+      "url": "https://www.netflix.com/mx-en/title/81936018"
+    },
+    {
+      "id": 9,
+      "title": "65",
+      "image": "/images/movies/movie-9.jpg",
+      "url": "https://www.netflix.com/mx-en/title/81520516"
+    },
+    {
+      "id": 10,
+      "title": "Godzilla x Kong: The New Empire",
+      "image": "/images/movies/movie-10.jpg",
+      "url": "https://www.netflix.com/mx-en/title/81767887"
+    },
+    {
+      "id": 11,
+      "title": "Shrek Forever After",
+      "image": "/images/movies/movie-11.jpg",
+      "url": "https://www.netflix.com/mx-en/title/70117295"
+    },
+    {
+      "id": 12,
+      "title": "Sonic the Hedgehog 3",
+      "image": "/images/movies/movie-12.jpg",
+      "url": "https://www.netflix.com/mx-en/title/81902147"
+    },
+    {
+      "id": 13,
+      "title": "Heaven Is for Real",
+      "image": "/images/movies/movie-13.jpg",
+      "url": "https://www.netflix.com/mx-en/title/70295734"
+    },
+    {
+      "id": 14,
+      "title": "Seven Years in Tibet",
+      "image": "/images/movies/movie-14.jpg",
+      "url": "https://www.netflix.com/mx-en/title/1179053"
+    },
+    {
+      "id": 15,
+      "title": "Lost on a Mountain in Maine",
+      "image": "/images/movies/movie-15.jpg",
+      "url": "https://www.netflix.com/mx-en/title/83074706"
+    },
+    {
+      "id": 16,
+      "title": "Coach Carter",
+      "image": "/images/movies/movie-16.jpg",
+      "url": "https://www.netflix.com/mx-en/title/70019004"
+    },
+    {
+      "id": 17,
+      "title": "Just Mercy",
+      "image": "/images/movies/movie-17.jpg",
+      "url": "https://www.netflix.com/mx-en/title/80207506"
+    },
+    {
+      "id": 18,
+      "title": "Fatherhood",
+      "image": "/images/movies/movie-18.jpg",
+      "url": "https://www.netflix.com/mx-en/title/81435227"
+    },
+    {
+      "id": 19,
+      "title": "Rescued by Ruby",
+      "image": "/images/movies/movie-19.jpg",
+      "url": "https://www.netflix.com/mx-en/title/81107362"
+    },
+    {
+      "id": 20,
+      "title": "The Six Triple Eight",
+      "image": "/images/movies/movie-20.jpg",
+      "url": "https://www.netflix.com/mx-en/title/81590591"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Your Next Watch",
+      "movies": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    },
+    {
+      "id": 2,
+      "name": "Drama Movies Based on Real Life",
+      "movies": [13, 14, 15, 16, 17, 18, 19, 20]
+    }
+  ]
+}
