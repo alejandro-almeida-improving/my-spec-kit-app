@@ -55,3 +55,62 @@ Record your local verification results below or in a linked doc so the “no CI�
 | 2025-11-24 | `npm run build` | ✅ | |
 | 2025-11-24 | `npx playwright test` | ✅ | |
 
+## Spec Kit commands
+
+The following commands were used with Spec Kit during the development of this project:
+
+### Establish project principles
+
+```
+/speckit.constitution Voy a crear una web estática con Next.js. Sigue los Next.js coding guidelines. Usare Shadcn y Tailwind CSS. Solo usare Playwright para testing; y se crearan los tests después de la implementación. No usaremos CI.
+```
+
+### Create the spec
+
+```
+/speckit.specify Quiero que diseñes una **página web tipo Netflix** para mostrar un catálogo de películas. La página debe ser atractiva, moderna.
+
+Elementos que debe incluir:
+
+1. **Encabezado / Header**  
+   - Logo (puede ser ficticio)  
+   - Barra de navegación mínima ("Inicio", "Películas", "Series", "Mi lista")  
+   - Icono de usuario (perfil)  
+   - Barra de búsqueda para buscar títulos  
+
+2. **Sección principal ("Hero")**  
+   - Un carrusel / slider grande (full-width) con entre 3 y 5 películas destacadas  
+   - Cada slide debe mostrar el póster de la película, el título y una breve descripción (o tagline)  
+   - Flechas para navegar ("anterior" / "siguiente") y también puntos o miniaturas para indicar el slide actual  
+   - Opción para pausar la rotación automática (o que no rote automáticamente): permitir que el usuario controle el slider.  
+
+3. **Catálogo de películas en carruseles**  
+   - Debe haber múltiples filas (carouseles) con diferentes "categorías": por ejemplo, "Tendencias", "Nuevas", "Acción", "Comedia", etc.  
+   - Cada carrusel debe mostrar miniaturas (posters pequeños) de películas, con scroll horizontal  
+   - Cada miniatura debe tener al menos: la imagen (poster), el nombre de la película, y al pasar el mouse (hover) o al tocar (en dispositivos móviles) debería aparecer un botón (o overlay) para "Ver más" o "Agregar a mi lista"  
+
+4. **Página de detalle de película**  
+   - Cuando el usuario hace clic en una película, se abre una página con el detalle de la pelicula, pero por el momento no se implementara.
+
+5. **Pie de página (footer)**  
+   - Enlaces útiles (Ayuda, Términos, Privacidad)  
+   - Redes sociales  
+   - Copyright (ficticio)
+
+6. **Diseño visual y experiencia de usuario**  
+   - Usar un estilo oscuro / tema típico de streaming ("dark mode") para dar ese look de Netflix  
+   - Transiciones suaves entre slides del carrusel  
+   - Asegurarse de que el carrusel sea accesible (navegación por teclado, lectores de pantalla) y que no cause problemas de usabilidad. Por ejemplo, permitir que el usuario navegue con flechas o pagine manualmente.
+```
+
+### Create a technical implementation plan
+
+```
+/speckit.plan No necesitamos implementar ningún backend. Puedes usar el siguiente mockup de ejemplo: `mockups/netflix-movies.png`. Utiliza la librería `swiper` para mostrar las películas. Las imágenes de las películas están en: `public/images/movies/movie-*.jpg`.
+```
+
+### Break down into tasks
+
+```
+/speckit.tasks
+```

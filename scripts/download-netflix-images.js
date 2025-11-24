@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
+
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
@@ -60,7 +62,7 @@ async function downloadAllImages() {
     try {
       await downloadImage(url, filename);
     } catch (err) {
-      console.error(`Failed to download image ${i + 1}`);
+      console.error(`Failed to download image ${i + 1}`, err);
     }
     
     // Pequeña pausa para no sobrecargar el servidor
