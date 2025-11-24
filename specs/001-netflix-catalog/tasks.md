@@ -49,11 +49,11 @@ description: "Task list for the Netflix-style Movie Catalog Page feature"
 **Independent Test**: Use `tests/carousel.spec.ts` to scroll a row via wheel/keyboard, hover cards to reveal the overlay, and activate the “Watch details”/“Add to My List” buttons per the acceptance criteria.
 
 ### Tests for User Story 2
-- [ ] T013 Create `tests/carousel.spec.ts` that walks through a carousel row, scrolls via wheel or keyboard, ensures overlays appear, and runs with `npx playwright test --config=playwright.config.ts --grep "carousel"` to prove compliance.
+- [x] T013 Create `tests/carousel.spec.ts` that walks through a carousel row, scrolls via wheel or keyboard, ensures overlays appear, and runs with `npx playwright test --config=playwright.config.ts --grep "carousel"` to prove compliance.
 
 ### Implementation for User Story 2
-- [ ] T014 [P] [US2] Implement `app/components/carousel-row.tsx` as a client component powered by Swiper that renders each category title, enforces six cards per row, shows poster cards with the movie name, and overlays “Watch details”/“Add to My List” actions on hover/focus.
-- [ ] T015 [US2] Update `app/page.tsx` to render all category rows using the new `CarouselRow` component, pass the proper movie collections, and keep the layout accessible by maintaining focus order inside each section.
+- [x] T014 [P] [US2] Implement `app/components/carousel-row.tsx` as a client component powered by Swiper that renders each category title, enforces six cards per row, shows poster cards with the movie name, and overlays “Watch details”/“Add to My List” actions on hover/focus.
+- [x] T015 [US2] Update `app/page.tsx` to render all category rows using the new `CarouselRow` component, pass the proper movie collections, and keep the layout accessible by maintaining focus order inside each section.
 
 ---
 

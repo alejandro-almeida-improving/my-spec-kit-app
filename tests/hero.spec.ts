@@ -6,8 +6,8 @@ test.describe("Hero carousel", () => {
 
     const hero = page.locator("section[aria-label='Featured hero carousel']");
     const liveRegion = hero.locator("p.sr-only");
-    const nextButton = page.locator(".swiper-button-next");
-    const paginationPoints = page.locator(".swiper-pagination-bullet");
+    const nextButton = hero.locator(".swiper-button-next").first();
+    const paginationPoints = hero.locator(".swiper-pagination-bullet");
     const pauseButton = page.getByRole("button", { name: /PAUSE|RESUME/ });
 
     await expect(liveRegion).toHaveText(/Currently showing:/i);
