@@ -5,6 +5,8 @@
 **Status**: Draft  
 **Input**: User description: "$ARGUMENTS"
 
+**Guidance**: Cite the constitution when explaining how this feature stays static-first (Next.js App Router), uses Tailwind + Shadcn, honors accessibility/performance baselines, and supports the Playwright-only manual verification workflow with no CI.
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--
@@ -76,6 +78,8 @@
 - How does system handle [error scenario]?
 
 ## Requirements *(mandatory)*
+
+*All requirements assume Playwright verification after the UI implementation completes and that all manual lint/build/Playwright commands run locally in the absence of CI. Document these commands alongside the requirement when relevant.*
 
 <!--
   ACTION REQUIRED: The content in this section represents placeholders.

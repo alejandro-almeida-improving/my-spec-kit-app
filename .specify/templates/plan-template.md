@@ -31,7 +31,13 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+Every plan must explain how the feature respects the constitution’s mandates: static-first Next.js delivery, Tailwind + Shadcn styling, Playwright-only testing written after implementation, accessibility/performance baselines, and manual verification with no CI. At a minimum include:
+
+- The static rendering strategy and any deviations (e.g., necessary Client Components or revalidation) with a Next.js guideline reference.
+- The Tailwind/Shadcn components or theme extensions that will be reused or created.
+- The high-level Playwright journeys that will guard the story, noting that tests run post-implementation and documenting the manual lint/build/Playwright commands that must succeed locally.
+- Accessibility or performance ramps that must be checked before release.
+- The README or doc updates that capture the verification steps so future contributors know how to manually validate the work.
 
 ## Project Structure
 

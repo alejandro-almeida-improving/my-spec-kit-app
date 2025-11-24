@@ -8,9 +8,10 @@ description: "Task list template for feature implementation"
 **Input**: Design documents from `/specs/[###-feature-name]/`
 **Prerequisites**: plan.md (required), spec.md (required for user stories), research.md, data-model.md, contracts/
 
-**Tests**: The examples below include test tasks. Tests are OPTIONAL - only include them if explicitly requested in the feature specification.
+**Tests**: Playwright is the mandatory engine. Add test tasks only when Playwright scenarios are defined, and make sure they execute after the UI implementation is complete. Each test task must note the manual command used locally and the acceptance criteria that justify the run.
 
 **Organization**: Tasks are grouped by user story to enable independent implementation and testing of each story.
+**Constitution Alignment**: Every story should mention how it satisfies the static-first Next.js approach, reuses or extends Tailwind/Shadcn components, and logs the manual lint/build/Playwright commands required for verification (since there is no CI).
 
 ## Format: `[ID] [P?] [Story] Description`
 
@@ -148,7 +149,7 @@ Examples of foundational tasks (adjust based on your project):
 
 ## Phase N: Polish & Cross-Cutting Concerns
 
-**Purpose**: Improvements that affect multiple user stories
+- **Purpose**: Improvements that affect multiple user stories
 
 - [ ] TXXX [P] Documentation updates in docs/
 - [ ] TXXX Code cleanup and refactoring
@@ -156,6 +157,7 @@ Examples of foundational tasks (adjust based on your project):
 - [ ] TXXX [P] Additional unit tests (if requested) in tests/unit/
 - [ ] TXXX Security hardening
 - [ ] TXXX Run quickstart.md validation
+- [ ] TXXX Document manual lint/build/Playwright commands in README or quickstart guidance so runners know how to verify without CI
 
 ---
 
