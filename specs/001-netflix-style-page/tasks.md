@@ -11,8 +11,8 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Install Shadcn UI components (carousel, card, button) in `components/ui/`
-- [ ] T002 [P] Install lucide-react dependency in `package.json`
+- [x] T001 Install Shadcn UI components (carousel, card, button) in `components/ui/`
+- [x] T002 [P] Install lucide-react dependency in `package.json`
 
 ---
 
@@ -22,8 +22,8 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T003 Define Movie and Category interfaces in `lib/data.ts`
-- [ ] T004 [P] Implement mock data generation in `lib/data.ts`
+- [x] T003 Define Movie and Category interfaces in `lib/data.ts`
+- [x] T004 [P] Implement mock data generation in `lib/data.ts`
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -37,14 +37,14 @@
 
 ### Tests for User Story 1
 
-- [ ] T005 [P] [US1] Create Playwright test for landing page visibility in `tests/landing-page.spec.ts`
+- [x] T005 [P] [US1] Create Playwright test for landing page visibility in `tests/landing-page.spec.ts`
 
 ### Implementation for User Story 1
 
-- [ ] T006 [P] [US1] Create Hero component in `components/hero.tsx`
-- [ ] T007 [P] [US1] Create MovieCard component in `components/movie-card.tsx`
-- [ ] T008 [US1] Create ContentRow component structure in `components/content-row.tsx`
-- [ ] T009 [US1] Implement main page layout with Hero and Rows in `app/page.tsx`
+- [x] T006 [P] [US1] Create Hero component in `components/hero.tsx`
+- [x] T007 [P] [US1] Create MovieCard component in `components/movie-card.tsx`
+- [x] T008 [US1] Create ContentRow component structure in `components/content-row.tsx`
+- [x] T009 [US1] Implement main page layout with Hero and Rows in `app/page.tsx`
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
@@ -58,12 +58,12 @@
 
 ### Tests for User Story 2
 
-- [ ] T010 [P] [US2] Create Playwright test for carousel interaction in `tests/carousel.spec.ts`
+- [x] T010 [P] [US2] Create Playwright test for carousel interaction in `tests/carousel.spec.ts`
 
 ### Implementation for User Story 2
 
-- [ ] T011 [US2] Implement Shadcn Carousel logic in `components/content-row.tsx`
-- [ ] T012 [P] [US2] Add hover interactions and visual feedback to `components/movie-card.tsx`
+- [x] T011 [US2] Implement Shadcn Carousel logic in `components/content-row.tsx`
+- [x] T012 [P] [US2] Add hover interactions and visual feedback to `components/movie-card.tsx`
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 
@@ -77,13 +77,13 @@
 
 ### Tests for User Story 3
 
-- [ ] T013 [P] [US3] Create Playwright test for responsive layout in `tests/responsive.spec.ts`
+- [x] T013 [P] [US3] Create Playwright test for responsive layout in `tests/responsive.spec.ts`
 
 ### Implementation for User Story 3
 
-- [ ] T014 [US3] Configure responsive breakpoints for Carousel in `components/content-row.tsx`
-- [ ] T015 [US3] Adjust Hero component styles for mobile in `components/hero.tsx`
-- [ ] T016 [US3] Adjust global header and layout for mobile in `app/page.tsx`
+- [x] T014 [US3] Configure responsive breakpoints for Carousel in `components/content-row.tsx`
+- [x] T015 [US3] Adjust Hero component styles for mobile in `components/hero.tsx`
+- [x] T016 [US3] Adjust global header and layout for mobile in `app/page.tsx`
 
 **Checkpoint**: All user stories should now be independently functional
 
@@ -93,8 +93,8 @@
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T017 [P] Verify accessibility (Lighthouse) and fix issues in `app/page.tsx`
-- [ ] T018 [P] Ensure consistent styling across all components in `components/`
+- [x] T017 [P] Verify accessibility (Lighthouse) and fix issues in `app/page.tsx`
+- [x] T018 [P] Ensure consistent styling across all components in `components/`
 
 ---
 
