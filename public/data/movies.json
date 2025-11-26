@@ -1,0 +1,100 @@
+{
+  "categories": [
+    {
+      "title": "Your Next Watch",
+      "slug": "your-next-watch",
+      "movies": [
+        {
+          "title": "Frankenstein",
+          "imageUrl": "https://occ-0-4592-3997.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcJUIG34qIPKVbVQ2Rbfv0jJaESD-Ay68dcAajXiXl5K-nJ_K1d_hxqhiUs7l6yV0jdEy9er8kV_lSgx_zS98gd1I5hqxVLmki2EW4pX_fY62NygL-ht_ir4QKIiIDq9OM5rpornjaObOf52mxM7hhdCcwc06FanCi4WQxcgrpHZAlc14ZanC68U0CjwDrM0TeG4H7AEgSQQlVh2xzDR26ZsJ5vA9eDEo8IcSME.jpg?r=c06",
+          "slug": "frankenstein",
+          "category": "Your Next Watch",
+          "localImage": "/images/movies/frankenstein.jpg"
+        },
+        {
+          "title": "A Man Called Otto",
+          "imageUrl": "https://occ-0-4592-3997.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZWsSnwFkQj0Gyh0l7HhF0Vqy3xi0DZi0wWigC1tCOD8slTpnFvvRfP965YVdwep4lnOA3EUv5iv7XGvHhHi56m7a1zYNclx5-r3zm9JdRGrR63qH8T2LOLM6oUBshwRWKvLnO6Hqiski-bnoofpCUDBnE6hl723eWVu9hVvPGT4aXlkAnYzJQdrCoBGBk3syk_Cp-MgWAVo-YP0TgUg_o4acUhXhr0pQBElRGI.jpg?r=bc2",
+          "slug": "a-man-called-otto",
+          "category": "Your Next Watch",
+          "localImage": "/images/movies/a-man-called-otto.jpg"
+        },
+        {
+          "title": "KPop Demon Hunters",
+          "imageUrl": "https://occ-0-4592-3997.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABT2mZQamY05LUZ7yJwaEM6hk-YIoaQM6uqL2j_KHYe_QQcTdigpBFjpiXuosRxH-LO5HVQDe269NnTE0QUP6h8Hc9j-6jiyH_gHvRM8CHTP1g2lKTEXk2KO8HXJeAn9dJbF4Iq4lFq6qDyRFOLZSMI9jHXD3hg8vSAU.jpg?r=b78",
+          "slug": "kpop-demon-hunters",
+          "category": "Your Next Watch",
+          "localImage": "/images/movies/kpop-demon-hunters.jpg"
+        },
+        {
+          "title": "Counterattack",
+          "imageUrl": "https://occ-0-4592-3997.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTD-C1QENesBiyhEhejz3EvX8ooC-Zi1I_tz2S-d9yZ41UGdLurQw-hA3bdN2-A_pMFwsGnc2HnCeuFCwP4j6l8Si3YKmxlpIVs.jpg?r=73b",
+          "slug": "counterattack",
+          "category": "Your Next Watch",
+          "localImage": "/images/movies/counterattack.jpg"
+        },
+        {
+          "title": "65",
+          "imageUrl": "https://occ-0-4592-3997.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVfXcjE9iW_-l1WMwI-2ouzB50CK9i520GltDvJUJYeA7SLmp952FWpxk_Q1tyjqrcNtF7v_ZNBqmhqmIw3FnBD7ldKrRhP41MWFBv_ikk6zFI3ew0SdUYnSHqNpksddFhgkd0rIHqOto7M7Y1i54r4ZkbcsBScyHM-rZGkN27kLp-ZISEfSYNchmfLN0SpNobAHmEA-aof-WUYLsPFW5iP2jKMJYZ5IRlEhlIY.jpg?r=420",
+          "slug": "65",
+          "category": "Your Next Watch",
+          "localImage": "/images/movies/65.jpg"
+        },
+        {
+          "title": "The Secret Life of Pets 2",
+          "imageUrl": "https://occ-0-4592-3997.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbNjURObHIgfglxCOul8hKeXcpQ_UwLdbubRyZVEHuAUhg-qwUJb2ShtUxyYD7LlLdIqypcJvnfA7d2NijZrVYR1AEEh6WjsP8U.jpg?r=0d8",
+          "slug": "the-secret-life-of-pets-2",
+          "category": "Your Next Watch",
+          "localImage": "/images/movies/the-secret-life-of-pets-2.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Suspenseful Movies",
+      "slug": "suspenseful-movies",
+      "movies": [
+        {
+          "title": "The Little Things",
+          "imageUrl": "https://occ-0-4592-3997.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUrUkCBCs_wWHA0fXUWUqi9-bdb1Got0-HB8xeLa7xpN1hBjy7mCN1z1_I5Ihomi2KfNjL_UDxSmoDdgPuqQ1LQgzfQKNI_IfVuct5Ks5RGKNy8h11aoEsRuuBOE4n2ba17bG7PLVZIomheysSLe9KAcLEb-zMyCqEn8eo6dluCb.jpg?r=187",
+          "slug": "the-little-things",
+          "category": "Suspenseful Movies",
+          "localImage": "/images/movies/the-little-things.jpg"
+        },
+        {
+          "title": "Now You See Me",
+          "imageUrl": "https://occ-0-4592-3997.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdedr3lFDSICx5rA4xXw_24KwnmVkLw0v2WkzRV-0RFxaTRST-km6ghGpBEGs5tt_i-7iKLcHntrlShAYNVTI7_08VnDU12xaG8.jpg?r=6d1",
+          "slug": "now-you-see-me",
+          "category": "Suspenseful Movies",
+          "localImage": "/images/movies/now-you-see-me.jpg"
+        },
+        {
+          "title": "Godzilla x Kong: The New Empire",
+          "imageUrl": "https://occ-0-4592-3997.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSGC_gKboNIzPS77juDzSxf3outa5pBGvWSOUN4u4NUj0LSdkZI_zNak1yruqIhN9L_cSw2mjVCqTLVcph0bIfAZwDJDU4Di0CA.jpg?r=e8b",
+          "slug": "godzilla-x-kong-the-new-empire",
+          "category": "Suspenseful Movies",
+          "localImage": "/images/movies/godzilla-x-kong-the-new-empire.jpg"
+        },
+        {
+          "title": "Plane",
+          "imageUrl": "https://occ-0-4592-3997.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABXxs0hdjlM-ZRjkx3L4JkoSp5ES6xL-B27JeriG4qSp9PkwaPNxCbi0wwuQjpDqyn9_rOHWp2XPuZPwMFbGn1H6fYpJr1lnux9Q.jpg?r=640",
+          "slug": "plane",
+          "category": "Suspenseful Movies",
+          "localImage": "/images/movies/plane.jpg"
+        },
+        {
+          "title": "The Elixir",
+          "imageUrl": "https://occ-0-4592-3997.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdxb_r4_2maBiAH1CLC-fj58W0tjLXdkI1YrZp2Uf2-9hBtbcTHcNgFrLPwx6CfU9U1bhIB4ElTWj4g4lHjlOs1y48tlvU2mmfs.jpg?r=bf8",
+          "slug": "the-elixir",
+          "category": "Suspenseful Movies",
+          "localImage": "/images/movies/the-elixir.jpg"
+        },
+        {
+          "title": "The Mother",
+          "imageUrl": "https://occ-0-4592-3997.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABcs--5bUf482uSW7gVBmTfLfcovyylDCcTulhQe7kYSmUjtirRqsrHtJi6UjkOKTqgvT5plFNLn-j8Sqrm57-DIEj0VkkH4XVG8.jpg?r=b32",
+          "slug": "the-mother",
+          "category": "Suspenseful Movies",
+          "localImage": "/images/movies/the-mother.jpg"
+        }
+      ]
+    }
+  ]
+}
