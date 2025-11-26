@@ -28,11 +28,11 @@ Based on plan.md, this is a Next.js App Router web application:
 
 **Purpose**: Project initialization and Shadcn component installation
 
-- [ ] T001 Configure dark theme CSS variables in app/globals.css
-- [ ] T002 [P] Install Shadcn Carousel component via `npx shadcn@latest add carousel`
-- [ ] T003 [P] Install Shadcn Card component via `npx shadcn@latest add card`
-- [ ] T004 [P] Install Shadcn Badge component via `npx shadcn@latest add badge`
-- [ ] T005 Update next.config.ts for static export and image configuration
+- [X] T001 Configure dark theme CSS variables in app/globals.css
+- [X] T002 [P] Install Shadcn Carousel component via `npx shadcn@latest add carousel`
+- [X] T003 [P] Install Shadcn Card component via `npx shadcn@latest add card`
+- [X] T004 [P] Install Shadcn Badge component via `npx shadcn@latest add badge`
+- [X] T005 Update next.config.ts for static export and image configuration
 
 ---
 
@@ -42,9 +42,9 @@ Based on plan.md, this is a Next.js App Router web application:
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T006 Create TypeScript interfaces for Movie, Category, and CatalogData in lib/data/types.ts
-- [ ] T007 Create static movie catalog data with all 7 categories in lib/data/movies.ts
-- [ ] T008 Update app/layout.tsx with dark theme body styling
+- [X] T006 Create TypeScript interfaces for Movie, Category, and CatalogData in lib/data/types.ts
+- [X] T007 Create static movie catalog data with all 7 categories in lib/data/movies.ts
+- [X] T008 Update app/layout.tsx with dark theme body styling
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -58,11 +58,11 @@ Based on plan.md, this is a Next.js App Router web application:
 
 ### Implementation for User Story 1
 
-- [ ] T009 [US1] Create CatalogHeader component in components/movie-catalog/catalog-header.tsx
-- [ ] T010 [US1] Create MovieCard component (basic version - poster + title only) in components/movie-catalog/movie-card.tsx
-- [ ] T011 [US1] Create CategoryHeader component in components/movie-catalog/category-header.tsx
-- [ ] T012 [US1] Create CategoryRow component (basic grid/list layout) in components/movie-catalog/category-row.tsx
-- [ ] T013 [US1] Implement main catalog page with all categories in app/page.tsx
+- [X] T009 [US1] Create CatalogHeader component in components/movie-catalog/catalog-header.tsx
+- [X] T010 [US1] Create MovieCard component (basic version - poster + title only) in components/movie-catalog/movie-card.tsx
+- [X] T011 [US1] Create CategoryHeader component in components/movie-catalog/category-header.tsx
+- [X] T012 [US1] Create CategoryRow component (basic grid/list layout) in components/movie-catalog/category-row.tsx
+- [X] T013 [US1] Implement main catalog page with all categories in app/page.tsx
 
 **Checkpoint**: User Story 1 complete - Page displays header, categories, and movie thumbnails
 
@@ -76,9 +76,9 @@ Based on plan.md, this is a Next.js App Router web application:
 
 ### Implementation for User Story 2
 
-- [ ] T014 [US2] Enhance CategoryRow to use Shadcn Carousel component in components/movie-catalog/category-row.tsx
-- [ ] T015 [US2] Configure carousel with align-start, no-loop, and responsive items-per-view in components/movie-catalog/category-row.tsx
-- [ ] T016 [US2] Style carousel Previous/Next buttons for Netflix-like appearance in components/movie-catalog/category-row.tsx
+- [X] T014 [US2] Enhance CategoryRow to use Shadcn Carousel component in components/movie-catalog/category-row.tsx
+- [X] T015 [US2] Configure carousel with align-start, no-loop, and responsive items-per-view in components/movie-catalog/category-row.tsx
+- [X] T016 [US2] Style carousel Previous/Next buttons for Netflix-like appearance in components/movie-catalog/category-row.tsx
 
 **Checkpoint**: User Story 2 complete - Carousels navigate horizontally with arrow controls
 
@@ -92,9 +92,9 @@ Based on plan.md, this is a Next.js App Router web application:
 
 ### Implementation for User Story 3
 
-- [ ] T017 [US3] Enhance MovieCard with next/image for optimized poster images in components/movie-catalog/movie-card.tsx
-- [ ] T018 [US3] Add image error handling with placeholder fallback in components/movie-catalog/movie-card.tsx
-- [ ] T019 [US3] Ensure consistent aspect ratio (16:9) and sizing across all movie cards in components/movie-catalog/movie-card.tsx
+- [X] T017 [US3] Enhance MovieCard with next/image for optimized poster images in components/movie-catalog/movie-card.tsx
+- [X] T018 [US3] Add image error handling with placeholder fallback in components/movie-catalog/movie-card.tsx
+- [X] T019 [US3] Ensure consistent aspect ratio (16:9) and sizing across all movie cards in components/movie-catalog/movie-card.tsx
 
 **Checkpoint**: User Story 3 complete - Movie thumbnails display consistently with titles and images
 
@@ -108,9 +108,9 @@ Based on plan.md, this is a Next.js App Router web application:
 
 ### Implementation for User Story 4
 
-- [ ] T020 [US4] Apply Netflix color palette variables to all components in app/globals.css
-- [ ] T021 [US4] Style page background and text colors for WCAG AA compliance in app/globals.css
-- [ ] T022 [US4] Style category headers with white text and proper contrast in components/movie-catalog/category-header.tsx
+- [X] T020 [US4] Apply Netflix color palette variables to all components in app/globals.css
+- [X] T021 [US4] Style page background and text colors for WCAG AA compliance in app/globals.css
+- [X] T022 [US4] Style category headers with white text and proper contrast in components/movie-catalog/category-header.tsx
 
 **Checkpoint**: User Story 4 complete - Dark theme applied with Netflix-style appearance
 
@@ -124,8 +124,8 @@ Based on plan.md, this is a Next.js App Router web application:
 
 ### Implementation for User Story 5
 
-- [ ] T023 [US5] Add link wrapper to CategoryHeader component in components/movie-catalog/category-header.tsx
-- [ ] T024 [US5] Add hover styles (cursor, underline, color change) to category headers in components/movie-catalog/category-header.tsx
+- [X] T023 [US5] Add link wrapper to CategoryHeader component in components/movie-catalog/category-header.tsx
+- [X] T024 [US5] Add hover styles (cursor, underline, color change) to category headers in components/movie-catalog/category-header.tsx
 
 **Checkpoint**: User Story 5 complete - Category headers are clickable with hover feedback
 
@@ -139,9 +139,9 @@ Based on plan.md, this is a Next.js App Router web application:
 
 ### Implementation for User Story 6
 
-- [ ] T025 [US6] Create MovieBadge component with badge type styling in components/movie-catalog/movie-badge.tsx
-- [ ] T026 [US6] Integrate MovieBadge into MovieCard component in components/movie-catalog/movie-card.tsx
-- [ ] T027 [US6] Style Top 10 badge (red #e50914) and Recently Added badge (green #46d369) in components/movie-catalog/movie-badge.tsx
+- [X] T025 [US6] Create MovieBadge component with badge type styling in components/movie-catalog/movie-badge.tsx
+- [X] T026 [US6] Integrate MovieBadge into MovieCard component in components/movie-catalog/movie-card.tsx
+- [X] T027 [US6] Style Top 10 badge (red #e50914) and Recently Added badge (green #46d369) in components/movie-catalog/movie-badge.tsx
 
 **Checkpoint**: User Story 6 complete - Badges display on relevant movie cards
 
@@ -151,10 +151,10 @@ Based on plan.md, this is a Next.js App Router web application:
 
 **Purpose**: Final improvements and validation
 
-- [ ] T028 [P] Add responsive breakpoints for mobile/tablet/desktop viewports in components/movie-catalog/category-row.tsx
-- [ ] T029 [P] Add touch/swipe gesture support verification for mobile carousels
-- [ ] T030 Validate page against quickstart.md test scenarios
-- [ ] T031 Performance check - verify page load < 3 seconds, carousel navigation < 200ms
+- [X] T028 [P] Add responsive breakpoints for mobile/tablet/desktop viewports in components/movie-catalog/category-row.tsx
+- [X] T029 [P] Add touch/swipe gesture support verification for mobile carousels
+- [X] T030 Validate page against quickstart.md test scenarios
+- [X] T031 Performance check - verify page load < 3 seconds, carousel navigation < 200ms
 
 ---
 
