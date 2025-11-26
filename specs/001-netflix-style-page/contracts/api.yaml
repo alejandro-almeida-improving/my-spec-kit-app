@@ -1,0 +1,49 @@
+openapi: 3.0.0
+info:
+  title: Netflix Clone API
+  version: 1.0.0
+paths:
+  /categories:
+    get:
+      summary: Get all content categories with movies
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Category'
+components:
+  schemas:
+    Movie:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        image:
+          type: string
+        description:
+          type: string
+      required:
+        - id
+        - title
+        - image
+    Category:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        movies:
+          type: array
+          items:
+            $ref: '#/components/schemas/Movie'
+      required:
+        - id
+        - title
+        - movies
