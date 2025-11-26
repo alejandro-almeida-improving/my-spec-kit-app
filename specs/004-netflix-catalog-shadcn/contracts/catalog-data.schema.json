@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "catalog-data.schema.json",
+  "title": "Movie Catalog Data",
+  "description": "Schema for the Netflix-style movie catalog static data",
+  "type": "object",
+  "required": ["categories"],
+  "properties": {
+    "categories": {
+      "type": "array",
+      "description": "Array of movie category sections",
+      "minItems": 6,
+      "items": {
+        "$ref": "#/definitions/Category"
+      }
+    }
+  },
+  "definitions": {
+    "Category": {
+      "type": "object",
+      "description": "A category/genre section containing movies",
+      "required": ["title", "slug", "movies"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Display title of the category",
+          "minLength": 1,
+          "examples": ["Your Next Watch", "Suspenseful Movies", "Action Thriller Movies"]
+        },
+        "slug": {
+          "type": "string",
+          "description": "URL-friendly identifier",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "examples": ["your-next-watch", "suspenseful-movies"]
+        },
+        "movies": {
+          "type": "array",
+          "description": "Movies in this category",
+          "minItems": 1,
+          "maxItems": 20,
+          "items": {
+            "$ref": "#/definitions/Movie"
+          }
+        }
+      }
+    },
+    "Movie": {
+      "type": "object",
+      "description": "A movie in the catalog",
+      "required": ["title", "slug", "localImage", "category"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Display title of the movie",
+          "minLength": 1,
+          "examples": ["Frankenstein", "The Little Things"]
+        },
+        "slug": {
+          "type": "string",
+          "description": "URL-friendly identifier",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "examples": ["frankenstein", "the-little-things"]
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "Original remote image URL (optional fallback)",
+          "format": "uri"
+        },
+        "localImage": {
+          "type": "string",
+          "description": "Local path to poster image",
+          "pattern": "^/images/movies/.+\\.(jpg|jpeg|png|webp)$",
+          "examples": ["/images/movies/frankenstein.jpg"]
+        },
+        "category": {
+          "type": "string",
+          "description": "Category name this movie belongs to",
+          "minLength": 1
+        },
+        "badge": {
+          "type": ["string", "null"],
+          "description": "Optional badge to display on the movie card",
+          "enum": ["Recently Added", "Top 10", "New", null]
+        }
+      }
+    }
+  }
+}
