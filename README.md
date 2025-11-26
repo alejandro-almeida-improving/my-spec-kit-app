@@ -114,3 +114,9 @@ Elementos que debe incluir:
 ```
 /speckit.tasks
 ```
+
+### Execute implementation
+
+```
+/speckit.implement
+```
