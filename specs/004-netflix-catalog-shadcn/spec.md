@@ -85,9 +85,9 @@ As a visitor, I want to click on a movie card so that I can access more details 
 
 **Acceptance Scenarios**:
 
-1. **Given** I am viewing a movie card, **When** I hover over the card, **Then** I see visual feedback indicating it is interactive (cursor change, subtle animation).
+1. **Given** I am viewing a movie card, **When** I hover over the card, **Then** I see visual feedback (subtle animation/scale effect) for aesthetic polish.
 
-2. **Given** I am viewing a movie card, **When** I click on the card, **Then** I am navigated to the movie detail page or shown movie information.
+2. ~~**Given** I am viewing a movie card, **When** I click on the card, **Then** I am navigated to the movie detail page or shown movie information.~~ *Deferred: Movie cards are static display only in this version; no click action.*
 
 ---
 
@@ -130,7 +130,7 @@ As a visitor, I want category titles to be clickable links so that I can view al
   - Movie title below the image
 - **FR-006**: Carousels MUST support horizontal scrolling via navigation arrow buttons.
 - **FR-007**: System MUST display at least 6 category sections with movies.
-- **FR-008**: Movie cards MUST be interactive with hover states indicating clickability.
+- **FR-008**: Movie cards MUST have hover states for visual polish (scale/opacity effect). Cards are static display only; no click action required.
 - **FR-009**: System MUST use Shadcn UI components for the carousel and card implementations.
 - **FR-010**: Category titles MUST be clickable links.
 - **FR-011**: System MUST support responsive layout adjusting the number of visible cards based on screen width.
@@ -163,10 +163,32 @@ As a visitor, I want category titles to be clickable links so that I can view al
 - **SC-006**: Visual appearance matches Netflix's catalog page aesthetic (dark theme, card layout, carousel navigation).
 - **SC-007**: Page achieves a Lighthouse accessibility score of at least 80.
 
+## Clarifications
+
+### Session 2025-11-26
+
+- Q: How many movies should each category section display? → A: 5-8 movies per category
+- Q: What should happen when a user clicks on a movie card? → A: Nothing (static display only)
+- Q: What loading state should display while images/data are loading? → A: No explicit loading state (blank until loaded)
+- Q: What is the target page load performance (LCP)? → A: No specific target (best effort)
+- Q: Should we explicitly declare what features are out-of-scope? → A: Yes, exclude authentication, search, video playback, user preferences
+
 ## Assumptions
 
 - Movie data will be provided as static JSON or mock data for the initial implementation.
+- Each category section contains 5-8 movies.
+- No explicit loading states required; content renders when available (static data loads synchronously).
+- No specific page load performance target; best effort optimization.
 - Poster images will be sourced from downloaded assets or placeholder image service.
 - The page is a public-facing catalog view (no authentication required for viewing).
 - Touch/swipe navigation on mobile devices will be handled by the Shadcn carousel component.
 - Category sections shown include: "Your Next Watch", "Suspenseful Movies", "New on Netflix", "Action Thriller Movies", "Award-Winning Movies", "Comedy Movies", "Action Movies", "Action & Adventure Movies", "Crowd Pleasers", "Family Movies", "Thriller Movies", "Blockbuster Movies".
+
+## Out of Scope
+
+The following features are explicitly excluded from this MVP:
+
+- **Authentication**: No user login, registration, or account management.
+- **Search**: No search functionality for finding movies.
+- **Video Playback**: No video player or trailer playback capabilities.
+- **User Preferences**: No personalization, watchlists, or viewing history.
