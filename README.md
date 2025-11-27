@@ -34,3 +34,52 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Spec Kit commands
+
+The following commands were used with Spec Kit during the development of this project:
+
+### Establish project principles
+
+```
+/speckit.constitution Voy a crear una web estática con Next.js. Sigue los Next.js coding guidelines. Usare Shadcn y Tailwind CSS. Solo usare Playwright para testing; y se crearan los tests después de la implementación. No usaremos CI.
+```
+
+### Create the spec
+
+```
+/speckit.specify Quiero construir una aplicación que ofrezca herramientas para mejorar la productividad de los desarrolladores, cada herramienta tendrá su propia pagina. La lista de herramientas es:
+
+- Case Converter: Transformación de texto simple (lowercase, uppercase, title case, y camelCase).
+- UUID Generator: Generación de identificadores únicos.
+- Base64 Converter: Codificación y decodificación estándar.
+- URL Encoder: Uso de funciones nativas como encodeURIComponent.
+- Timestamp: Conversión de fechas (Unix timestamp a legible y viceversa).
+- Hash Generator: Uso de librerías criptográficas estándar (MD5, SHA).
+- Lorem Generator: Generación de texto aleatorio desde un banco de palabras.
+- Number Base Converter: Conversión matemática entre bases (binario, hex, octal, y decimal).
+```
+
+### Clarify underspecified areas
+
+```
+/speckit.clarify
+```
+
+### Create a technical implementation plan
+
+```
+/speckit.plan Usaremos los componentes de shadcn para construir la app.
+```
+
+### Break down into tasks
+
+```
+/speckit.tasks
+```
+
+### Execute implementation
+
+```
+/speckit.implement
+```
