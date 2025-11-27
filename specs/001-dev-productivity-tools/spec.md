@@ -82,7 +82,7 @@ As a developer, I want to convert timestamps and number bases so that I can inte
 
 ### Edge Cases
 
-- What happens when invalid input is provided to converters (e.g., non-numeric text in Number Base Converter)? System should display a clear error message or ignore invalid characters.
+- What happens when invalid input is provided to converters (e.g., non-numeric text in Number Base Converter)? System should display a clear error message using a Toast notification or ignore invalid characters.
 - What happens when the input text is extremely large? System should handle it gracefully or enforce a reasonable limit.
 - What happens if the user is offline? The tools should continue to work as they are client-side.
 
@@ -91,12 +91,14 @@ As a developer, I want to convert timestamps and number bases so that I can inte
 - The application will run in a modern web browser with JavaScript enabled.
 - All processing is done client-side; no server-side API is required for these tools.
 - The user has a basic understanding of the developer terms used (Base64, UUID, etc.).
+- The application UI will be designed for Light Mode only (Dark mode is out of scope for MVP).
+- The application layout will be optimized for Desktop screens (mobile responsiveness is out of scope for MVP).
 
 ## Requirements *(mandatory)*
 
 ### Functional Requirements
 
-- **FR-001**: System MUST provide a navigation mechanism (sidebar or home grid) to access all 8 tools.
+- **FR-001**: System MUST provide a persistent sidebar navigation mechanism (using shadcn/ui Sidebar component) to access all 8 tools.
 - **FR-002**: **Case Converter**: System MUST support conversion to Lowercase, Uppercase, Title Case, and CamelCase.
 - **FR-003**: **UUID Generator**: System MUST generate valid UUID v4 identifiers.
 - **FR-004**: **Base64 Converter**: System MUST support both encoding text to Base64 and decoding Base64 to text.
@@ -104,9 +106,10 @@ As a developer, I want to convert timestamps and number bases so that I can inte
 - **FR-006**: **Timestamp Converter**: System MUST convert between Unix Timestamps (seconds/milliseconds) and human-readable dates.
 - **FR-007**: **Hash Generator**: System MUST support generating hashes using standard algorithms (MD5, SHA-1, SHA-256).
 - **FR-008**: **Lorem Generator**: System MUST generate random "Lorem Ipsum" text based on a requested number of paragraphs, sentences, or words.
-- **FR-009**: **Number Base Converter**: System MUST convert numbers between Binary (2), Octal (8), Decimal (10), and Hexadecimal (16).
-- **FR-010**: All transformations MUST happen in real-time or upon a clear "Convert/Generate" action.
-- **FR-011**: System MUST allow users to easily copy the result to the clipboard.
+- FR-009: **Number Base Converter**: System MUST convert numbers between Binary (2), Octal (8), Decimal (10), and Hexadecimal (16).
+- **FR-010**: All transformations MUST be triggered by an explicit "Convert" or "Generate" button click (no auto-conversion).
+- FR-011: System MUST allow users to easily copy the result to the clipboard and provide visual feedback via a Toast notification.
+- FR-012: System MUST display error messages (e.g., invalid input) using Toast notifications.
 
 ### Key Entities
 
@@ -122,3 +125,12 @@ As a developer, I want to convert timestamps and number bases so that I can inte
 - **SC-002**: All 8 tools perform their primary function correctly for valid inputs.
 - **SC-003**: Application loads and is interactive in under 1 second on standard broadband.
 - **SC-004**: Tools process inputs and show results in under 200ms (perceived as instant).
+
+## Clarifications
+
+### Session 2025-11-27
+- Q: Should tools convert in real-time or require a button click? → A: Explicit Only (Option B). Require a "Convert" or "Generate" button click for ALL tools.
+- Q: What is the theme strategy (Light/Dark)? → A: Light Mode Only (Option D). MVP scope, ignore dark mode for now.
+- Q: What is the responsiveness strategy? → A: Desktop Only (Option B). Fixed width layout optimized for large screens; may require scrolling on mobile.
+- Q: What is the primary navigation structure? → A: Persistent Sidebar (Option A). Always visible list of tools on the left side (implemented via shadcn/ui).
+- Q: How should the system provide feedback (success/error)? → A: Toast Notifications (Option A). Temporary popups using shadcn/ui Toaster.
