@@ -54,25 +54,20 @@ You **MUST** consider the user input before proceeding (if not empty).
    - **IF EXISTS**: Read quickstart.md for integration scenarios
 
 4. **Project Setup Verification**:
-   - **REQUIRED**: Create/verify ignore files based on actual project setup:
+   - **REQUIRED**: Verify and update existing ignore files based on actual project setup:
 
-   **Detection & Creation Logic**:
-   - Check if the following command succeeds to determine if the repository is a git repo (create/verify .gitignore if so):
-
-     ```sh
-     git rev-parse --git-dir 2>/dev/null
-     ```
-
-   - Check if Dockerfile* exists or Docker in plan.md → create/verify .dockerignore
-   - Check if .eslintrc* exists → create/verify .eslintignore
+   **Detection & Verification Logic**:
+   - Check if .gitignore exists → verify it contains essential patterns for the tech stack
+   - Check if .dockerignore exists → verify it contains essential Docker patterns
+   - Check if .eslintignore exists → verify it contains essential ESLint patterns
    - Check if eslint.config.* exists → ensure the config's `ignores` entries cover required patterns
-   - Check if .prettierrc* exists → create/verify .prettierignore
-   - Check if .npmrc or package.json exists → create/verify .npmignore (if publishing)
-   - Check if terraform files (*.tf) exist → create/verify .terraformignore
-   - Check if .helmignore needed (helm charts present) → create/verify .helmignore
+   - Check if .prettierignore exists → verify it contains essential Prettier patterns
+   - Check if .npmignore exists → verify it contains essential npm patterns
+   - Check if .terraformignore exists → verify it contains essential Terraform patterns
+   - Check if .helmignore exists → verify it contains essential Helm patterns
 
-   **If ignore file already exists**: Verify it contains essential patterns, append missing critical patterns only
-   **If ignore file missing**: Create with full pattern set for detected technology
+   **Action**: For each ignore file that **already exists**, verify it contains essential patterns and append missing critical patterns only
+   **Important**: Do NOT create new ignore files if they don't exist
 
    **Common Patterns by Technology** (from plan.md tech stack):
    - **Node.js/JavaScript/TypeScript**: `node_modules/`, `dist/`, `build/`, `*.log`, `.env*`
