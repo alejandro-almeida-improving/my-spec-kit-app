@@ -1,50 +1,53 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+SYNC IMPACT REPORT
+Version: 0.0.0 -> 1.0.0
+Modified Principles:
+- Added: I. Next.js Static Architecture
+- Added: II. Modern UI Stack
+- Added: III. Post-Implementation Testing
+- Added: IV. Local-First Workflow (No CI)
+- Added: V. Simplicity & YAGNI
+Templates requiring updates:
+- .specify/templates/tasks-template.md (⚠ pending - references TDD/Test-First)
+Follow-up TODOs:
+- Update tasks-template.md to remove "Write tests FIRST" instructions.
+-->
+# my-spec-kit-app Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Next.js Static Architecture
+The project is a static web application built with Next.js. It MUST follow Next.js coding guidelines and best practices for static exports. Dynamic server-side features that require a runtime server are prohibited unless explicitly authorized.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Modern UI Stack
+UI development MUST use Shadcn UI and Tailwind CSS. Consistency and adherence to the design system provided by these tools are mandatory. Custom CSS should be avoided in favor of Tailwind utility classes.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Post-Implementation Testing
+Testing is performed using Playwright ONLY. Tests are created *after* implementation is complete to verify functionality. Test-Driven Development (TDD) is explicitly NOT used.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Local-First Workflow (No CI)
+Continuous Integration (CI) pipelines are NOT used. All verification, building, and testing MUST be performed locally by the developer before deployment or merging.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Simplicity & YAGNI
+We adhere to "You Aren't Gonna Need It". Implement only what is requested. Keep the architecture simple and focused on the static nature of the site.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Technology Standards
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+*   **Framework**: Next.js (Static Export)
+*   **Styling**: Tailwind CSS
+*   **Components**: Shadcn UI
+*   **Language**: TypeScript
+*   **Testing**: Playwright
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Development Workflow
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+1.  **Implementation**: Develop the feature or page following Next.js and UI guidelines.
+2.  **Verification**: Verify the functionality manually in the local environment.
+3.  **Testing**: Write Playwright tests to cover the new functionality.
+4.  **Final Check**: Ensure all tests pass locally before considering the task complete.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This Constitution supersedes all other project documentation. Amendments require a version bump and a Sync Impact Report. Code reviews must verify compliance with the UI stack and testing strategy.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-11-27 | **Last Amended**: 2025-11-27
