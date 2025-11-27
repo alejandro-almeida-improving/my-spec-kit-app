@@ -120,3 +120,37 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Netflix Dark Theme Colors */
+:root {
+  --netflix-background: #141414;
+  --netflix-red: #E50914;
+  --netflix-text-primary: #FFFFFF;
+  --netflix-text-secondary: #B3B3B3;
+  --netflix-card-background: #181818;
+}
+
+/* Custom utilities for Netflix theme */
+@layer utilities {
+  .bg-netflix {
+    background-color: var(--netflix-background);
+  }
+  .bg-netflix-card {
+    background-color: var(--netflix-card-background);
+  }
+  .bg-netflix-red {
+    background-color: var(--netflix-red);
+  }
+  .text-netflix-primary {
+    color: var(--netflix-text-primary);
+  }
+  .text-netflix-secondary {
+    color: var(--netflix-text-secondary);
+  }
+  .border-netflix-red {
+    border-color: var(--netflix-red);
+  }
+  .hover\:bg-netflix-red-dark:hover {
+    background-color: #b8070f;
+  }
+}
