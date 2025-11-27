@@ -28,11 +28,11 @@ Based on plan.md structure:
 
 **Purpose**: Install dependencies and create base structure
 
-- [ ] T001 Install Shadcn Button component via `npx shadcn@latest add button`
-- [ ] T002 [P] Install Shadcn Card component via `npx shadcn@latest add card`
-- [ ] T003 [P] Install Shadcn Carousel component via `npx shadcn@latest add carousel`
-- [ ] T004 Create TypeScript interfaces in `types/movie.ts` (Movie, Category, CatalogData)
-- [ ] T005 [P] Update `app/globals.css` with dark theme colors (#141414 background, Netflix red #E50914)
+- [X] T001 Install Shadcn Button component via `npx shadcn@latest add button`
+- [X] T002 [P] Install Shadcn Card component via `npx shadcn@latest add card`
+- [X] T003 [P] Install Shadcn Carousel component via `npx shadcn@latest add carousel`
+- [X] T004 Create TypeScript interfaces in `types/movie.ts` (Movie, Category, CatalogData)
+- [X] T005 [P] Update `app/globals.css` with dark theme colors (#141414 background, Netflix red #E50914)
 
 ---
 
@@ -42,9 +42,9 @@ Based on plan.md structure:
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T006 Expand `public/data/movies.json` to include 6+ categories with 5-8 movies each (per FR-007)
-- [ ] T007 Create MovieCard component in `components/movie-catalog/movie-card.tsx` with poster image, title, optional badge
-- [ ] T008 Update `app/layout.tsx` with dark theme body classes and metadata
+- [X] T006 Expand `public/data/movies.json` to include 6+ categories with 5-8 movies each (per FR-007)
+- [X] T007 Create MovieCard component in `components/movie-catalog/movie-card.tsx` with poster image, title, optional badge
+- [X] T008 Update `app/layout.tsx` with dark theme body classes and metadata
 
 **Checkpoint**: Foundation ready - user story implementation can now begin
 
@@ -58,10 +58,10 @@ Based on plan.md structure:
 
 ### Implementation for User Story 1
 
-- [ ] T009 [US1] Create CategoryRow component in `components/movie-catalog/category-row.tsx` with category title and Shadcn Carousel
-- [ ] T010 [US1] Configure carousel to display movie cards with responsive sizing (`basis-1/3 md:basis-1/4 lg:basis-1/5`)
-- [ ] T011 [US1] Implement main catalog page in `app/page.tsx` that loads JSON data and renders CategoryRow for each category
-- [ ] T012 [US1] Add responsive card sizing with Tailwind breakpoint classes
+- [X] T009 [US1] Create CategoryRow component in `components/movie-catalog/category-row.tsx` with category title and Shadcn Carousel
+- [X] T010 [US1] Configure carousel to display movie cards with responsive sizing (`basis-1/3 md:basis-1/4 lg:basis-1/5`)
+- [X] T011 [US1] Implement main catalog page in `app/page.tsx` that loads JSON data and renders CategoryRow for each category
+- [X] T012 [US1] Add responsive card sizing with Tailwind breakpoint classes
 
 **Checkpoint**: User Story 1 complete - page displays all category carousels with movie cards
 
@@ -75,9 +75,9 @@ Based on plan.md structure:
 
 ### Implementation for User Story 2
 
-- [ ] T013 [US2] Add CarouselPrevious and CarouselNext buttons to CategoryRow in `components/movie-catalog/category-row.tsx`
-- [ ] T014 [US2] Style navigation arrows with Netflix aesthetic (visible on hover, positioned at edges)
-- [ ] T015 [US2] Configure carousel behavior: disable Previous at start, disable Next at end
+- [X] T013 [US2] Add CarouselPrevious and CarouselNext buttons to CategoryRow in `components/movie-catalog/category-row.tsx`
+- [X] T014 [US2] Style navigation arrows with Netflix aesthetic (visible on hover, positioned at edges)
+- [X] T015 [US2] Configure carousel behavior: disable Previous at start, disable Next at end
 
 **Checkpoint**: User Story 2 complete - all carousels have working navigation arrows
 
@@ -91,8 +91,8 @@ Based on plan.md structure:
 
 ### Implementation for User Story 3
 
-- [ ] T016 [P] [US3] Create PageHeader component in `components/movie-catalog/page-header.tsx` with title and description props
-- [ ] T017 [US3] Integrate PageHeader into `app/page.tsx` with "Movies" title and descriptive subtitle
+- [X] T016 [P] [US3] Create PageHeader component in `components/movie-catalog/page-header.tsx` with title and description props
+- [X] T017 [US3] Integrate PageHeader into `app/page.tsx` with "Movies" title and descriptive subtitle
 
 **Checkpoint**: User Story 3 complete - page header displays correctly
 
@@ -106,9 +106,9 @@ Based on plan.md structure:
 
 ### Implementation for User Story 4
 
-- [ ] T018 [P] [US4] Create Navbar component in `components/movie-catalog/navbar.tsx` with logo/brand name
-- [ ] T019 [US4] Add "Join Now" button (red #E50914) and "Sign In" link to Navbar
-- [ ] T020 [US4] Integrate Navbar into `app/layout.tsx` with fixed positioning at top
+- [X] T018 [P] [US4] Create Navbar component in `components/movie-catalog/navbar.tsx` with logo/brand name
+- [X] T019 [US4] Add "Join Now" button (red #E50914) and "Sign In" link to Navbar
+- [X] T020 [US4] Integrate Navbar into `app/layout.tsx` with fixed positioning at top
 
 **Checkpoint**: User Story 4 complete - navigation bar is visible and styled correctly
 
@@ -122,8 +122,8 @@ Based on plan.md structure:
 
 ### Implementation for User Story 5
 
-- [ ] T021 [US5] Add hover states to MovieCard in `components/movie-catalog/movie-card.tsx` (scale, shadow, transition)
-- [ ] T022 [US5] Ensure hover effects work correctly within carousel context
+- [X] T021 [US5] Add hover states to MovieCard in `components/movie-catalog/movie-card.tsx` (scale, shadow, transition)
+- [X] T022 [US5] Ensure hover effects work correctly within carousel context
 
 **Checkpoint**: User Story 5 complete - movie cards have polished hover interactions
 
@@ -137,8 +137,8 @@ Based on plan.md structure:
 
 ### Implementation for User Story 6
 
-- [ ] T023 [US6] Update CategoryRow in `components/movie-catalog/category-row.tsx` to render title as Next.js Link
-- [ ] T024 [US6] Style category title links with hover underline effect (white text, underline on hover)
+- [X] T023 [US6] Update CategoryRow in `components/movie-catalog/category-row.tsx` to render title as Next.js Link
+- [X] T024 [US6] Style category title links with hover underline effect (white text, underline on hover)
 
 **Checkpoint**: User Story 6 complete - category titles are styled as clickable links
 
@@ -148,12 +148,12 @@ Based on plan.md structure:
 
 **Purpose**: Final refinements and testing
 
-- [ ] T025 [P] Add "Recently Added" badge display logic to MovieCard (per FR-012)
-- [ ] T026 [P] Verify responsive layout from 320px to 2560px (per SC-003)
-- [ ] T027 Run Lighthouse accessibility audit and fix issues to achieve score ≥80 (per SC-007)
-- [ ] T028 Write Playwright E2E tests in `tests/movie-catalog.spec.ts` covering acceptance scenarios
-- [ ] T029 Run quickstart.md validation - verify all setup steps work correctly
-- [ ] T030 Final visual review against Netflix catalog page aesthetic (per SC-006)
+- [X] T025 [P] Add "Recently Added" badge display logic to MovieCard (per FR-012)
+- [X] T026 [P] Verify responsive layout from 320px to 2560px (per SC-003)
+- [X] T027 Run Lighthouse accessibility audit and fix issues to achieve score ≥80 (per SC-007)
+- [X] T028 Write Playwright E2E tests in `tests/movie-catalog.spec.ts` covering acceptance scenarios
+- [X] T029 Run quickstart.md validation - verify all setup steps work correctly
+- [X] T030 Final visual review against Netflix catalog page aesthetic (per SC-006)
 
 ---
 
