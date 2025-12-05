@@ -1,50 +1,56 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: [CONSTITUTION_VERSION] -> 1.0.0
+- Modified principles: Defined all principles for the first time based on user requirements.
+  - Principle 1: Next.js Static Export
+  - Principle 2: UI Consistency (Shadcn + Tailwind)
+  - Principle 3: Post-Implementation Testing (Playwright)
+  - Principle 4: No CI Dependency
+- Added sections: None
+- Removed sections: None
+- Templates requiring updates: ✅ None (Templates are generic enough to support these principles)
+- Follow-up TODOs: None
+-->
+
+# my-spec-kit-app Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Next.js Static Export
+The application is a static web site built with Next.js.
+- **MUST** use `output: 'export'` in `next.config.ts`.
+- **MUST** avoid server-side features that require a Node.js runtime at request time (e.g., `getServerSideProps`, dynamic API routes without static generation).
+- **SHOULD** use App Router and Server Components for build-time data fetching.
+- **MUST** follow Next.js coding guidelines and best practices for static exports.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. UI Consistency (Shadcn + Tailwind)
+The user interface relies strictly on Shadcn UI and Tailwind CSS.
+- **MUST** use Shadcn UI components for interactive elements.
+- **MUST** use Tailwind CSS utility classes for styling.
+- **MUST NOT** create custom CSS files unless absolutely necessary for global styles or complex animations not coverable by Tailwind.
+- **SHOULD** maintain visual consistency by reusing defined components and tokens.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Post-Implementation Testing
+Testing is performed exclusively with Playwright and only after feature implementation.
+- **MUST** use Playwright for all testing (E2E).
+- **MUST NOT** write tests before implementation (No TDD).
+- **MUST** create tests only after the feature code is written and manually verified.
+- **SHOULD** focus on critical user journeys and regression testing.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
-
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### IV. No CI Dependency
+The project is designed to be developed and deployed without Continuous Integration infrastructure.
+- **MUST NOT** rely on GitHub Actions or other CI providers for build, test, or deploy steps.
+- **MUST** ensure all verification (linting, building, testing) can be run locally.
+- **SHOULD** provide clear documentation for manual deployment processes.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+### Amendment Process
+- Any changes to these principles require a version bump and a corresponding update to this Constitution.
+- Proposed amendments must be verified against existing code and templates to ensure consistency.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+### Compliance
+- All new features and code changes **MUST** adhere to these principles.
+- Code reviews (self or peer) **MUST** verify compliance before merging.
+
+**Version**: 1.0.0 | **Ratified**: 2025-12-05 | **Last Amended**: 2025-12-05
