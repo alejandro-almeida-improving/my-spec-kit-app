@@ -5,11 +5,21 @@
 **Status**: Draft  
 **Input**: User description: "Quiero construir una aplicación que ofrezca herramientas para mejorar la productividad de los desarrolladores, cada herramienta tendrá su propia pagina. La lista de herramientas es: Case Converter, UUID Generator, Base64 Converter, URL Encoder, Timestamp, Hash Generator, Lorem Generator, Number Base Converter."
 
+## Clarifications
+
+### Session 2025-12-05
+
+- Q: Which case formats should the Case Converter support? → A: Basic four only: lowercase, UPPERCASE, Title Case, camelCase
+- Q: Should the URL Encoder support both encoding AND decoding operations? → A: Both encode and decode (matches Base64 pattern, more useful)
+- Q: What timezone behavior should the Timestamp Converter provide? → A: UTC only (simplest, matches Unix timestamp standard)
+- Q: What type of placeholder text should the Lorem Generator produce? → A: Traditional Lorem Ipsum text (classic Latin-based placeholder)
+- Q: What navigation pattern should the application use? → A: Persistent sidebar/menu with all 8 tools listed (1 click from anywhere)
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Text Case Transformation (Priority: P1)
 
-A developer is working with API responses or database records and needs to quickly convert field names between different naming conventions (camelCase, snake_case, PascalCase, etc.). They visit the Case Converter page, paste their text, select the target format, and instantly see the converted result.
+A developer is working with API responses or database records and needs to quickly convert field names between different naming conventions. They visit the Case Converter page, paste their text, select the target format (lowercase, UPPERCASE, Title Case, or camelCase), and instantly see the converted result.
 
 **Why this priority**: Text case conversion is one of the most frequently needed utilities for developers working with different APIs, languages, and coding standards. It's a fundamental pain point that occurs multiple times per day.
 
@@ -58,37 +68,37 @@ A developer working with authentication tokens, image data URIs, or encoded API 
 
 ---
 
-### User Story 4 - URL Encoding (Priority: P2)
+### User Story 4 - URL Encoding/Decoding (Priority: P2)
 
-A developer building query parameters or working with URL-based APIs needs to properly encode special characters. They visit the URL Encoder page, paste their text containing spaces and special characters, and receive a properly encoded URL string they can use in their application.
+A developer building query parameters or working with URL-based APIs needs to properly encode or decode special characters. They visit the URL Encoder page, paste their text containing spaces and special characters (or an already-encoded URL string), select encode or decode, and receive the properly converted string they can use in their application.
 
-**Why this priority**: URL encoding is critical for web development but typically needed less frequently than the P1 tools. It's still independently valuable for debugging URL issues.
+**Why this priority**: URL encoding/decoding is critical for web development but typically needed less frequently than the P1 tools. It's still independently valuable for debugging URL issues and understanding query parameters.
 
-**Independent Test**: Can be fully tested by entering text with spaces and special characters (like &, =, ?), encoding it, and verifying the output is a valid URL-encoded string that can be safely used in URLs.
+**Independent Test**: Can be fully tested by entering text with spaces and special characters (like &, =, ?), encoding it, then decoding the result back to verify it matches the original. Also verify that encoded URLs can be safely used in URLs.
 
 **Acceptance Scenarios**:
 
-1. **Given** a developer enters "name=John Doe", **When** they encode it, **Then** they see "name%3DJohn%20Doe"
-2. **Given** a developer enters "search?query=hello&world", **When** they encode it, **Then** all special characters (?, =, &) are properly encoded
-3. **Given** a developer enters already encoded text, **When** they encode it again, **Then** the system doesn't double-encode (or provides an option to decode first)
-4. **Given** a developer encodes text, **When** they use the result in a URL, **Then** the URL functions correctly without breaking
+1. **Given** a developer enters "name=John Doe", **When** they click "Encode", **Then** they see "name%3DJohn%20Doe"
+2. **Given** a developer enters "search?query=hello&world", **When** they click "Encode", **Then** all special characters (?, =, &) are properly encoded
+3. **Given** a developer enters "name%3DJohn%20Doe", **When** they click "Decode", **Then** they see "name=John Doe"
+4. **Given** a developer encodes text with special characters, **When** they decode the result, **Then** the original text is perfectly restored including all special characters
 
 ---
 
 ### User Story 5 - Timestamp Conversion (Priority: P2)
 
-A developer debugging logs or working with database records needs to convert between Unix timestamps and human-readable dates. They access the Timestamp page, enter either a Unix timestamp or a formatted date, and see the conversion in both formats with timezone information.
+A developer debugging logs or working with database records needs to convert between Unix timestamps and human-readable dates. They access the Timestamp page, enter either a Unix timestamp or a formatted date, and see the conversion in both formats displayed in UTC timezone.
 
-**Why this priority**: Timestamp conversion is essential for backend developers and DevOps engineers but is needed situationally rather than constantly. Still provides significant value when needed.
+**Why this priority**: Timestamp conversion is essential for backend developers and DevOps engineers but is needed situationally rather than constantly. Still provides significant value when needed. UTC is the standard for Unix timestamps and server logs.
 
-**Independent Test**: Can be fully tested by entering a Unix timestamp (e.g., 1701792000), converting to readable format, and verifying the date/time is correct. Then test reverse conversion.
+**Independent Test**: Can be fully tested by entering a Unix timestamp (e.g., 1701792000), converting to readable UTC format, and verifying the date/time is correct. Then test reverse conversion.
 
 **Acceptance Scenarios**:
 
-1. **Given** a developer enters Unix timestamp "1701792000", **When** they convert it, **Then** they see "December 5, 2023 4:00:00 PM GMT"
-2. **Given** a developer enters a date "December 5, 2023 4:00:00 PM", **When** they convert to timestamp, **Then** they see "1701792000"
-3. **Given** a developer enters a timestamp, **When** viewing the result, **Then** they see the date in multiple formats (ISO 8601, human-readable, relative time like "2 years ago")
-4. **Given** a developer is viewing a conversion, **When** they click "Current Time", **Then** they see the current timestamp and its readable format
+1. **Given** a developer enters Unix timestamp "1701792000", **When** they convert it, **Then** they see "December 5, 2023 4:00:00 PM UTC"
+2. **Given** a developer enters a date "December 5, 2023 4:00:00 PM UTC", **When** they convert to timestamp, **Then** they see "1701792000"
+3. **Given** a developer enters a timestamp, **When** viewing the result, **Then** they see the date in multiple formats (ISO 8601, human-readable, relative time like "2 years ago"), all in UTC
+4. **Given** a developer is viewing a conversion, **When** they click "Current Time", **Then** they see the current timestamp and its readable UTC format
 
 ---
 
@@ -111,18 +121,18 @@ A developer needs to generate cryptographic hashes for password verification, fi
 
 ### User Story 7 - Lorem Ipsum Text Generation (Priority: P3)
 
-A designer or developer creating UI mockups needs placeholder text for testing layouts and designs. They access the Lorem Generator page, specify how much text they need (words, sentences, or paragraphs), and receive randomized placeholder text they can use in their mockups.
+A designer or developer creating UI mockups needs placeholder text for testing layouts and designs. They access the Lorem Generator page, specify how much text they need (words, sentences, or paragraphs), and receive randomized traditional Lorem Ipsum text they can use in their mockups.
 
-**Why this priority**: While useful for UI development and design, lorem ipsum generation is needed less frequently and is lower priority than functional developer tools. It's primarily for visual/UI work.
+**Why this priority**: While useful for UI development and design, lorem ipsum generation is needed less frequently and is lower priority than functional developer tools. It's primarily for visual/UI work. Traditional Lorem Ipsum is the industry-standard placeholder text.
 
-**Independent Test**: Can be fully tested by requesting different amounts of text (e.g., 50 words, 3 paragraphs), verifying the output matches the requested quantity, and confirming the text is readable placeholder content.
+**Independent Test**: Can be fully tested by requesting different amounts of text (e.g., 50 words, 3 paragraphs), verifying the output matches the requested quantity, and confirming the text is traditional Lorem Ipsum placeholder content.
 
 **Acceptance Scenarios**:
 
-1. **Given** a developer requests "5 words", **When** they generate text, **Then** they receive exactly 5 words of lorem ipsum text
-2. **Given** a developer requests "3 paragraphs", **When** they generate text, **Then** they receive 3 distinct paragraphs of placeholder text
-3. **Given** a developer requests "100 words", **When** they generate text, **Then** they receive approximately 100 words (within 10% variance is acceptable)
-4. **Given** a developer generates text multiple times, **When** they compare results, **Then** the text varies (is randomized) rather than being identical each time
+1. **Given** a developer requests "5 words", **When** they generate text, **Then** they receive exactly 5 words of traditional Lorem Ipsum text
+2. **Given** a developer requests "3 paragraphs", **When** they generate text, **Then** they receive 3 distinct paragraphs of Lorem Ipsum placeholder text
+3. **Given** a developer requests "100 words", **When** they generate text, **Then** they receive approximately 100 words of Lorem Ipsum (within 10% variance is acceptable)
+4. **Given** a developer generates text multiple times, **When** they compare results, **Then** the text varies (is randomized from the Lorem Ipsum corpus) rather than being identical each time
 
 ---
 
@@ -163,20 +173,23 @@ A developer working with low-level programming, networking, or color codes needs
 ### Functional Requirements
 
 - **FR-001**: System MUST provide a dedicated page for each of the 8 tools (Case Converter, UUID Generator, Base64 Converter, URL Encoder, Timestamp Converter, Hash Generator, Lorem Generator, Number Base Converter)
-- **FR-002**: System MUST provide clear navigation allowing users to easily access any tool page
-- **FR-003**: Case Converter MUST support transformation between lowercase, uppercase, title case, and camelCase formats
+- **FR-002**: System MUST provide a persistent sidebar or menu displaying all 8 tools, allowing users to access any tool page with a single click from anywhere in the application
+- **FR-002a**: Navigation sidebar/menu MUST remain visible and accessible on all tool pages
+- **FR-003**: Case Converter MUST support transformation between exactly four formats: lowercase, UPPERCASE, Title Case, and camelCase
 - **FR-004**: UUID Generator MUST create standards-compliant UUIDs (RFC 4122) in version 4 format
 - **FR-005**: UUID Generator MUST provide one-click copy-to-clipboard functionality
 - **FR-006**: Base64 Converter MUST support both encoding plain text to Base64 and decoding Base64 to plain text
 - **FR-007**: Base64 Converter MUST display clear error messages when invalid Base64 strings are provided for decoding
-- **FR-008**: URL Encoder MUST properly encode all special characters that require encoding in URLs (spaces, &, =, ?, #, etc.)
-- **FR-009**: Timestamp Converter MUST support conversion from Unix timestamp to human-readable date format
+- **FR-008**: URL Encoder MUST support both encoding plain text to URL-encoded format and decoding URL-encoded strings back to plain text
+- **FR-008a**: URL Encoder MUST properly encode all special characters that require encoding in URLs (spaces, &, =, ?, #, etc.)
+- **FR-008b**: URL Encoder MUST properly decode URL-encoded strings back to their original plain text format
+- **FR-009**: Timestamp Converter MUST support conversion from Unix timestamp to human-readable date format in UTC timezone
 - **FR-010**: Timestamp Converter MUST support conversion from human-readable date to Unix timestamp
-- **FR-011**: Timestamp Converter MUST display dates in multiple formats (ISO 8601, localized readable format, relative time)
+- **FR-011**: Timestamp Converter MUST display dates in multiple formats (ISO 8601, localized readable format, relative time), all in UTC timezone
 - **FR-012**: Hash Generator MUST support MD5, SHA-1, SHA-256, and SHA-512 hash algorithms
 - **FR-013**: Hash Generator MUST produce deterministic outputs (same input always produces same hash)
 - **FR-014**: Lorem Generator MUST allow users to specify quantity in words, sentences, or paragraphs
-- **FR-015**: Lorem Generator MUST generate varied/randomized text on each generation rather than static output
+- **FR-015**: Lorem Generator MUST generate varied/randomized traditional Lorem Ipsum text on each generation rather than static output
 - **FR-016**: Number Base Converter MUST support conversion between binary, decimal, hexadecimal, and octal bases
 - **FR-017**: Number Base Converter MUST validate input matches the selected source base format
 - **FR-018**: All tools MUST handle empty input gracefully with appropriate user feedback
@@ -200,7 +213,7 @@ A developer working with low-level programming, networking, or color codes needs
 - **SC-001**: Users can complete any single conversion or generation operation in under 5 seconds from landing on the tool page
 - **SC-002**: Each tool produces accurate results that match industry-standard implementations (e.g., Base64 encoding matches RFC 4648, UUID matches RFC 4122)
 - **SC-003**: System handles text inputs up to 1MB in size without performance degradation (results appear within 2 seconds)
-- **SC-004**: All 8 tools are accessible from the main navigation with no more than 2 clicks from any page
+- **SC-004**: All 8 tools are accessible from the persistent navigation sidebar/menu with a single click from any page
 - **SC-005**: Copy-to-clipboard functionality works successfully in 95%+ of user attempts (for tools providing this feature)
 - **SC-006**: Users can successfully perform conversions without reading documentation for simple use cases (intuitive interface for basic operations)
 - **SC-007**: Error messages clearly explain what went wrong and how to fix it in all error scenarios
