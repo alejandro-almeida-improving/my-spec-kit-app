@@ -38,16 +38,16 @@ export function CategoryRow({ category, className }: CategoryRowProps) {
         <Carousel
           opts={{
             align: "start",
-            loop: false,
+            loop: true,
             dragFree: true,
           }}
           className="w-full"
         >
           <CarouselContent className="-ml-2 md:-ml-3">
-            {category.movies.map((movie) => (
+            {category.movies.map((movie, index) => (
               <CarouselItem
-                key={movie.slug}
-                className="basis-1/3 pl-2 md:basis-1/4 md:pl-3 lg:basis-1/5 xl:basis-1/6"
+                key={`${movie.slug}-${index}`}
+                className="basis-1/3 pl-2 md:basis-1/4 md:pl-3 lg:basis-1/5 xl:basis-[18%] 2xl:basis-[15%]"
               >
                 <MovieCard movie={movie} />
               </CarouselItem>

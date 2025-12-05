@@ -39,6 +39,42 @@
           "slug": "the-secret-life-of-pets-2",
           "category": "Your Next Watch",
           "localImage": "/images/movies/the-secret-life-of-pets-2.jpg"
+        },
+        {
+          "title": "Frankenstein",
+          "slug": "frankenstein",
+          "category": "Your Next Watch",
+          "localImage": "/images/movies/frankenstein.jpg"
+        },
+        {
+          "title": "A Man Called Otto",
+          "slug": "a-man-called-otto",
+          "category": "Your Next Watch",
+          "localImage": "/images/movies/a-man-called-otto.jpg"
+        },
+        {
+          "title": "KPop Demon Hunters",
+          "slug": "kpop-demon-hunters",
+          "category": "Your Next Watch",
+          "localImage": "/images/movies/kpop-demon-hunters.jpg"
+        },
+        {
+          "title": "Counterattack",
+          "slug": "counterattack",
+          "category": "Your Next Watch",
+          "localImage": "/images/movies/counterattack.jpg"
+        },
+        {
+          "title": "65",
+          "slug": "65",
+          "category": "Your Next Watch",
+          "localImage": "/images/movies/65.jpg"
+        },
+        {
+          "title": "The Secret Life of Pets 2",
+          "slug": "the-secret-life-of-pets-2",
+          "category": "Your Next Watch",
+          "localImage": "/images/movies/the-secret-life-of-pets-2.jpg"
         }
       ]
     },
@@ -46,6 +82,42 @@
       "title": "Suspenseful Movies",
       "slug": "suspenseful-movies",
       "movies": [
+        {
+          "title": "The Little Things",
+          "slug": "the-little-things",
+          "category": "Suspenseful Movies",
+          "localImage": "/images/movies/the-little-things.jpg"
+        },
+        {
+          "title": "Now You See Me",
+          "slug": "now-you-see-me",
+          "category": "Suspenseful Movies",
+          "localImage": "/images/movies/now-you-see-me.jpg"
+        },
+        {
+          "title": "Godzilla x Kong: The New Empire",
+          "slug": "godzilla-x-kong-the-new-empire",
+          "category": "Suspenseful Movies",
+          "localImage": "/images/movies/godzilla-x-kong-the-new-empire.jpg"
+        },
+        {
+          "title": "Plane",
+          "slug": "plane",
+          "category": "Suspenseful Movies",
+          "localImage": "/images/movies/plane.jpg"
+        },
+        {
+          "title": "The Elixir",
+          "slug": "the-elixir",
+          "category": "Suspenseful Movies",
+          "localImage": "/images/movies/the-elixir.jpg"
+        },
+        {
+          "title": "The Mother",
+          "slug": "the-mother",
+          "category": "Suspenseful Movies",
+          "localImage": "/images/movies/the-mother.jpg"
+        },
         {
           "title": "The Little Things",
           "slug": "the-little-things",
@@ -122,6 +194,41 @@
           "category": "New on Netflix",
           "localImage": "/images/movies/godzilla-x-kong-the-new-empire.jpg",
           "badge": "New"
+        },
+        {
+          "title": "Frankenstein",
+          "slug": "frankenstein",
+          "category": "New on Netflix",
+          "localImage": "/images/movies/frankenstein.jpg",
+          "badge": "Recently Added"
+        },
+        {
+          "title": "KPop Demon Hunters",
+          "slug": "kpop-demon-hunters",
+          "category": "New on Netflix",
+          "localImage": "/images/movies/kpop-demon-hunters.jpg",
+          "badge": "Recently Added"
+        },
+        {
+          "title": "Counterattack",
+          "slug": "counterattack",
+          "category": "New on Netflix",
+          "localImage": "/images/movies/counterattack.jpg",
+          "badge": "New"
+        },
+        {
+          "title": "The Elixir",
+          "slug": "the-elixir",
+          "category": "New on Netflix",
+          "localImage": "/images/movies/the-elixir.jpg",
+          "badge": "Recently Added"
+        },
+        {
+          "title": "Godzilla x Kong: The New Empire",
+          "slug": "godzilla-x-kong-the-new-empire",
+          "category": "New on Netflix",
+          "localImage": "/images/movies/godzilla-x-kong-the-new-empire.jpg",
+          "badge": "New"
         }
       ]
     },
@@ -164,6 +271,42 @@
           "slug": "the-little-things",
           "category": "Action Thriller Movies",
           "localImage": "/images/movies/the-little-things.jpg"
+        },
+        {
+          "title": "65",
+          "slug": "65",
+          "category": "Action Thriller Movies",
+          "localImage": "/images/movies/65.jpg"
+        },
+        {
+          "title": "Plane",
+          "slug": "plane",
+          "category": "Action Thriller Movies",
+          "localImage": "/images/movies/plane.jpg"
+        },
+        {
+          "title": "The Mother",
+          "slug": "the-mother",
+          "category": "Action Thriller Movies",
+          "localImage": "/images/movies/the-mother.jpg"
+        },
+        {
+          "title": "Counterattack",
+          "slug": "counterattack",
+          "category": "Action Thriller Movies",
+          "localImage": "/images/movies/counterattack.jpg"
+        },
+        {
+          "title": "Godzilla x Kong: The New Empire",
+          "slug": "godzilla-x-kong-the-new-empire",
+          "category": "Action Thriller Movies",
+          "localImage": "/images/movies/godzilla-x-kong-the-new-empire.jpg"
+        },
+        {
+          "title": "The Little Things",
+          "slug": "the-little-things",
+          "category": "Action Thriller Movies",
+          "localImage": "/images/movies/the-little-things.jpg"
         }
       ]
     },
@@ -171,6 +314,36 @@
       "title": "Comedy Movies",
       "slug": "comedy-movies",
       "movies": [
+        {
+          "title": "A Man Called Otto",
+          "slug": "a-man-called-otto",
+          "category": "Comedy Movies",
+          "localImage": "/images/movies/a-man-called-otto.jpg"
+        },
+        {
+          "title": "The Secret Life of Pets 2",
+          "slug": "the-secret-life-of-pets-2",
+          "category": "Comedy Movies",
+          "localImage": "/images/movies/the-secret-life-of-pets-2.jpg"
+        },
+        {
+          "title": "KPop Demon Hunters",
+          "slug": "kpop-demon-hunters",
+          "category": "Comedy Movies",
+          "localImage": "/images/movies/kpop-demon-hunters.jpg"
+        },
+        {
+          "title": "Now You See Me",
+          "slug": "now-you-see-me",
+          "category": "Comedy Movies",
+          "localImage": "/images/movies/now-you-see-me.jpg"
+        },
+        {
+          "title": "Frankenstein",
+          "slug": "frankenstein",
+          "category": "Comedy Movies",
+          "localImage": "/images/movies/frankenstein.jpg"
+        },
         {
           "title": "A Man Called Otto",
           "slug": "a-man-called-otto",
@@ -244,6 +417,44 @@
           "slug": "plane",
           "category": "Award-Winning Movies",
           "localImage": "/images/movies/plane.jpg"
+        },
+        {
+          "title": "A Man Called Otto",
+          "slug": "a-man-called-otto",
+          "category": "Award-Winning Movies",
+          "localImage": "/images/movies/a-man-called-otto.jpg",
+          "badge": "Top 10"
+        },
+        {
+          "title": "The Little Things",
+          "slug": "the-little-things",
+          "category": "Award-Winning Movies",
+          "localImage": "/images/movies/the-little-things.jpg"
+        },
+        {
+          "title": "The Mother",
+          "slug": "the-mother",
+          "category": "Award-Winning Movies",
+          "localImage": "/images/movies/the-mother.jpg"
+        },
+        {
+          "title": "Frankenstein",
+          "slug": "frankenstein",
+          "category": "Award-Winning Movies",
+          "localImage": "/images/movies/frankenstein.jpg",
+          "badge": "Top 10"
+        },
+        {
+          "title": "Now You See Me",
+          "slug": "now-you-see-me",
+          "category": "Award-Winning Movies",
+          "localImage": "/images/movies/now-you-see-me.jpg"
+        },
+        {
+          "title": "Plane",
+          "slug": "plane",
+          "category": "Award-Winning Movies",
+          "localImage": "/images/movies/plane.jpg"
         }
       ]
     },
@@ -251,6 +462,42 @@
       "title": "Sci-Fi & Fantasy",
       "slug": "sci-fi-fantasy",
       "movies": [
+        {
+          "title": "65",
+          "slug": "65",
+          "category": "Sci-Fi & Fantasy",
+          "localImage": "/images/movies/65.jpg"
+        },
+        {
+          "title": "Godzilla x Kong: The New Empire",
+          "slug": "godzilla-x-kong-the-new-empire",
+          "category": "Sci-Fi & Fantasy",
+          "localImage": "/images/movies/godzilla-x-kong-the-new-empire.jpg"
+        },
+        {
+          "title": "Frankenstein",
+          "slug": "frankenstein",
+          "category": "Sci-Fi & Fantasy",
+          "localImage": "/images/movies/frankenstein.jpg"
+        },
+        {
+          "title": "KPop Demon Hunters",
+          "slug": "kpop-demon-hunters",
+          "category": "Sci-Fi & Fantasy",
+          "localImage": "/images/movies/kpop-demon-hunters.jpg"
+        },
+        {
+          "title": "The Elixir",
+          "slug": "the-elixir",
+          "category": "Sci-Fi & Fantasy",
+          "localImage": "/images/movies/the-elixir.jpg"
+        },
+        {
+          "title": "The Secret Life of Pets 2",
+          "slug": "the-secret-life-of-pets-2",
+          "category": "Sci-Fi & Fantasy",
+          "localImage": "/images/movies/the-secret-life-of-pets-2.jpg"
+        },
         {
           "title": "65",
           "slug": "65",
